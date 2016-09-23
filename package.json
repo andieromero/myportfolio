@@ -1,0 +1,20 @@
+{
+  "name": "MyPortfolio",
+  "version": "0.0.0",
+  "private": false,
+  "author": "Andriana Romero",
+  "devDependencies": {
+  },
+  "engines": {
+    "node": "5.1.0",
+    "npm": "3.3.12"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "bower": "1.7.9",
+    "express": "4.13.3"
+  },
+  "cacheDirectories": ["node_modules"]
+}
