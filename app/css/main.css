@@ -13,8 +13,9 @@ html, body {
 }
 
 body {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 20px;
+    background-color: #e1e8f0;
 }
 
 .dropdown {
@@ -137,37 +138,105 @@ footer {
 }
 
 /****************BEGIN CUSTOM CSS*********************/
-
+/*Header*/
+.animated {
+  animation-delay: 1s;
+}
+nav.navbar li>a{
+  color: #323232!important;
+}
+nav.navbar li>a:hover{
+  color: #e62739!important;
+}
+a.navbar-brand img {
+  height: 28px;
+  width: 28px;
+}
+.navbar-default {
+  background-color:#e1e8f0;
+  background-image: none;
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: none;
+  transition: top 0.2s ease-in-out;
+  top: 0;
+}
+.nav-up {
+    top: -50px;
+}
+.shrink {
+  min-height: 35px;
+}
 /*Home page*/
 .fullPage {
-  position: absolute;
+  /*position: absolute;*/
   margin: 0;
-  height: 100%;
-  background-color: #e1e8f0;
+  /*height: 100%;*/
+  /*background-color: #e1e8f0;*/
   width: 100%;
+  background: url(../img/background.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 h1.headliner {
-  font-family: 'Bungee Shade', cursive;
-  font-size: 10vh;
+
   position: relative;
   text-align: center;
-  top: 30vh;
+  top: 27vh;
+  /*border: 6px solid #fff;
+  border-style: double;*/
+}
+span.outerbox{
+  /*border: 2px solid #b3b3b3;
+  padding: 2% 2%;*/
+}
+span.innerbox{
+  /*border: 1px solid #e62739;*/
+  font-family: 'Poiret One', cursive;
+  /*font-family: 'Raleway', sans-serif;*/
+  font-size: 5vw;
+  color: #e1e8f0;
+  letter-spacing: 3px;
+  padding: 2% 2%;
 }
 .bioLinks {
   margin: 0 auto;
-  top: 40vh;
+  top: 29vh;
   position: relative;
   text-align: justify;
   -ms-text-justify: distribute-all-lines;
   text-justify: distribute-all-lines;
-  width: 150px;
+  width: 90px;
 }
-.bioLinks > img {
+.bioLinks > a {
   display: inline-block;
-  width: auto;
+  opacity: .8;
+}
+.bioLinks img {
+  width: 20px;
+  height:20px;
+}
+.bioLinks > a:hover {
+  display: inline-block;
+  width: 20px;
+  height:20px;
+  opacity: .5;
 }
 .bioLinks:after {
   content: "";
   width: 100%;
   display: inline-block;
+}
+
+.jumbotron {
+  position: absolute;
+  /*bottom: -272px;*/
+  width: 100%;
+}
+.fullPage2 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
