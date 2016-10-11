@@ -33,8 +33,34 @@
 <![endif]-->
 
 <!-- Our Website Content Goes Here -->
-<div ng-include='"templates/header.html"'></div>
-<div ng-view></div>
+<!-- <div class="fullPage" id="fullPage">
+  <div ng-include='"templates/header.html" '></div>
+    <div class="landing">
+        <img src="img/landing.png" class="landing-img" alt="landing">
+    </div>
+</div> -->
+<div class="fullPage" id="fullPage">
+  <div ng-include='"templates/header.html" '></div>
+  <div class="landing">
+    <img src="img/landing.png" alt="landing" id="landing">
+    <img src="img/landing-mobile.png" alt="landing" id="landing-mobile">
+  </div>
+  <!-- <div class="landing">
+    <div class="split">
+      <img class="landing-img" src="img/budapest.jpg" alt="budapest">
+    </div>
+    <div class="split" id="right">
+      <div class="blurb">
+        <h3>aspiring</h3>
+        <h1>UX</h1>
+        <h2>DESIGNER</h2>
+        <h3>&&</h3>
+        <h1>FULL STACK</h1>
+        <h2>ENGINEER</h2>
+      </div>
+    </div>
+  </div> -->
+</div>
 <!-- <div ng-include='"templates/footer.html"'></div> -->
 
 <!-- Vendor: Javascripts -->

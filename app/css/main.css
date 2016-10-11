@@ -7,14 +7,15 @@ For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap
 */
 
 /* Global Styles */
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Fjalla+One|Lobster|Oswald:300,400,700';
 
 html, body {
     height: 100%;
 }
 
 body {
-    padding-top: 40px;
-    padding-bottom: 20px;
+    /*padding-top: 40px;
+    padding-bottom: 20px;*/
     background-color: #e1e8f0;
 }
 
@@ -138,24 +139,80 @@ footer {
 }
 
 /****************BEGIN CUSTOM CSS*********************/
+
+p {
+  font-family: 'Droid Sans', sans-serif;
+}
+h1{
+  font-family: 'Oswald', sans-serif;
+}
+h2, li {
+  font-family: 'Fjalla One', sans-serif;
+}
+h3 {
+  font-family: 'Lobster', cursive;
+}
+
 /*Header*/
 .animated {
   animation-delay: 1s;
 }
 nav.navbar li>a{
-  color: #323232!important;
+  color: #BCCBDE!important;
+  font-size: 22px;
 }
 nav.navbar li>a:hover{
-  color: #e62739!important;
+  color: #CDD422!important;
+}
+nav.navbar.transparent {
+  border-width: 0px;
+  -webkit-box-shadow: 0px 0px;
+  box-shadow: 0px 0px;
+  background-color: rgba(0,0,0,0.0);
+  background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+  background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+  background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+  padding: 10px 0px;
+  margin-right: 100px;
+}
+@media screen and (max-width: 767px) {
+  nav.navbar.transparent{
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    padding: 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navbar-default .navbar-collapse {
+    background-color: #e1e3e4;
+    text-align: center;;
+    opacity: .9;
+  }
+}
+@media (min-width: 768px) {
+  nav.navbar.transparent {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    padding: 10px 0px;
+    margin-right: 100px;
+  }
 }
 a.navbar-brand img {
   height: 28px;
   width: 28px;
 }
 .navbar-default {
-  background-color:#e1e8f0;
-  background-image: none;
-  background-repeat: no-repeat;
+  background-color:transparent;;
   border: none;
   box-shadow: none;
   transition: top 0.2s ease-in-out;
@@ -169,74 +226,45 @@ a.navbar-brand img {
 }
 /*Home page*/
 .fullPage {
-  /*position: absolute;*/
+  background-color: #E1E3E4;
   margin: 0;
-  /*height: 100%;*/
-  /*background-color: #e1e8f0;*/
   width: 100%;
-  background: url(../img/background.svg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  height: 100%;
 }
-h1.headliner {
-
-  position: relative;
-  text-align: center;
-  top: 27vh;
-  /*border: 6px solid #fff;
-  border-style: double;*/
+@media (min-width: 661px){
+  #landing {
+    height: 90vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 15px;
+  }
+  #landing-mobile {
+    display: none;
+  }
 }
-span.outerbox{
-  /*border: 2px solid #b3b3b3;
-  padding: 2% 2%;*/
-}
-span.innerbox{
-  /*border: 1px solid #e62739;*/
-  font-family: 'Poiret One', cursive;
-  /*font-family: 'Raleway', sans-serif;*/
-  font-size: 5vw;
-  color: #e1e8f0;
-  letter-spacing: 3px;
-  padding: 2% 2%;
-}
-.bioLinks {
-  margin: 0 auto;
-  top: 29vh;
-  position: relative;
-  text-align: justify;
-  -ms-text-justify: distribute-all-lines;
-  text-justify: distribute-all-lines;
-  width: 90px;
-}
-.bioLinks > a {
-  display: inline-block;
-  opacity: .8;
-}
-.bioLinks img {
-  width: 20px;
-  height:20px;
-}
-.bioLinks > a:hover {
-  display: inline-block;
-  width: 20px;
-  height:20px;
-  opacity: .5;
-}
-.bioLinks:after {
-  content: "";
-  width: 100%;
-  display: inline-block;
+@media screen and (max-width: 660px){
+  #landing{
+    display: none;
+  }
+  #landing-mobile {
+    width: 100%;
+    top:0px;
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.jumbotron {
-  position: absolute;
-  /*bottom: -272px;*/
-  width: 100%;
+.landing-img {
+  height: 90vh;
 }
-.fullPage2 {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
+
+
+
+#about {
+  background-color: #57599F;
 }
