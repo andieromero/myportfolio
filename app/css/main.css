@@ -166,7 +166,7 @@ nav.navbar li>a{
   color: #BCCBDE!important;
   font-size: 22px;
 }
-nav.navbar li>a:hover{
+nav.navbar li>a:hover, nav.navbar li>a.active{
   color: #CDD422!important;
 }
 nav.navbar.transparent {
@@ -275,6 +275,7 @@ a.navbar-brand img {
 }
 .about p {
   font-size: 23px;
+  line-height: 27px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
