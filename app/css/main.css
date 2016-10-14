@@ -151,6 +151,11 @@ h1{
   font-size: 86px;
   margin-left: 2em;
 }
+@media screen and (max-width: 1023px) {
+  h1 {
+    margin-left: 30px;
+  }
+}
 h2, li {
   font-family: 'Fjalla One', sans-serif;
 }
@@ -168,6 +173,9 @@ nav.navbar li>a{
 }
 nav.navbar li>a:hover, nav.navbar li>a.active{
   color: #CDD422!important;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  background-color: transparent!important;
 }
 nav.navbar.transparent {
   border-width: 0px;
@@ -236,7 +244,7 @@ a.navbar-brand img {
   width: 100%;
   height: 100%;
 }
-@media (min-width: 661px){
+@media (min-width: 1024px){
   #landing {
     height: 90vh;
     position: relative;
@@ -249,7 +257,7 @@ a.navbar-brand img {
     display: none;
   }
 }
-@media screen and (max-width: 660px){
+@media screen and (max-width: 1023px){
   #landing{
     display: none;
   }
@@ -270,20 +278,29 @@ a.navbar-brand img {
 
 .about {
   background-color: #57599f;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   padding-top: 50px;
+  position: relative;
 }
 .about p {
-  font-size: 23px;
-  line-height: 27px;
+  font-size: 20px;
+  line-height: 25px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  text-align: justify;
 }
 #about-para {
   margin-top: 30px;
   margin-bottom: 50px;
   width: 50vw;
+}
+@media screen and (max-width: 1023px) {
+  #about-para {
+    width: 65vw;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 .yellow {
   color: #cdd422;
@@ -300,7 +317,7 @@ a.navbar-brand img {
   padding-bottom: 50px;
 }
 #brain {
-  max-width: 360px;
+  max-width: 100%;
 }
 .skills p{
   font-family: 'Fjalla One', sans-serif;
@@ -313,4 +330,25 @@ a.navbar-brand img {
 #right p{
   color: #e62739;
   margin-left: 20px;
+}
+@media screen and (max-width: 1023px) {
+  .skills p {
+    font-size: 20px;
+  }
+  #left p {
+    margin-left: 20px;
+  }
+}
+#resume-button {
+  background-color: #cdd422;
+  color: #ffffff;
+  font-size: 23px;
+  font-family: 'Droid Sans', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px 15px;
+  border: none;
+  position: relative;
+  display: block;
+  margin-top: 30px;
 }
