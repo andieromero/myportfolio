@@ -333,7 +333,7 @@ a.navbar-brand img {
   background-color: #ACB1D4;
 }
 .about-brain .row{
-  width: 85vw;
+  width: 85%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -345,12 +345,14 @@ a.navbar-brand img {
 }
 @media screen and (max-width: 559px) {
   #brain {
-    max-width: 110%;
+    max-width: 150%;
     position: relative;
     left: -20px;
   }
   .about-brain .row {
     width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .skills p {
     font-size: 13px!important;
@@ -360,7 +362,7 @@ a.navbar-brand img {
   }
 }
 .skills p{
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
   font-size: 26px;
 }
 #left p{
