@@ -614,7 +614,7 @@ angular.module('duScroll.scrollspy', ['duScroll.spyAPI'])
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     // Home
-    .when("/", {templateUrl: "index.html", controller: "PageCtrl"})
+    .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
     // Pages
     .when("/about", {templateUrl: "partials/about.html", controller: "PageCtrl"})
     .when("/pricing", {templateUrl: "partials/pricing.html", controller: "PageCtrl"})
@@ -624,7 +624,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/blog", {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
     .when("/blog/post", {templateUrl: "partials/blog_item.html", controller: "BlogCtrl"})
     // else 404
-    .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
+    .otherwise({redirectTo:"404", templateUrl: "partials/404.html", controller: "PageCtrl"});
 }]);
 
 /**

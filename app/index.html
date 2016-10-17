@@ -27,85 +27,12 @@
     <link rel="stylesheet" href="css/main.css">
 
 </head>
-<body ng-app="myapp">
+<body ng-app="myapp" ng-view>
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div class="fullPage" id="fullPage">
-
-  <div ng-include='"templates/header.html" '></div>
-  <div class="landing">
-    <img src="img/landing-nolayer.png" alt="landing" id="landing" class="animated fadeIn">
-    <img src="img/landing-mobile.png" alt="landing" id="landing-mobile" class="animated fadeIn">
-  </div>
-</div>
-
-
-<div class="about" id="about">
-  <div class="container">
-    <h1>ABOUT.</h1>
-    <p id="about-para">I want to empower users with intuitive, enjoyable
-interfaces and products that will impact their daily lives.
-A recent graduate from UC San Diego, I am excited to
-begin a career that will allow me to explore the human -
-computer space. I studied cognitive functions of the brain, human behavior,
-and several programming languages, providing me with a diverse
-set of skills. Check out the brainy metaphor below to get to know
-some of my <span class="yellow">coding</span> and
-<span class="yellow">UX design</span> skills :-)</p>
-  </div>
-  <div class="about-brain">
-    <div class="row">
-      <div class="skills col-xs-4" id="left">
-        <p>-Java</p>
-        <p>-C / C++ </p>
-        <p>-HTML / CSS </p>
-        <p>-Javascript</p>
-      </div>
-      <div class="col-xs-4">
-        <img src="img/brain.png" alt="brain" id="brain">
-      </div>
-      <div class="skills col-xs-4" id="right">
-        <p>-Invision</p>
-        <p>-Axure</p>
-        <p>-Adobe Illustrator</p>
-        <p>-Responsive Design</p>
-      </div>
-    </div>
-  </div>
-  <button href="" id="resume-button">Download full resume</button>
-</div>
-<div class="work" id="work">
-  <div class="container">
-    <h1>WORK.</h1>
-    <div class="work-container">
-      <img src="img/fromdesign.png" alt="from design to implementation" id="fromdesign">
-      <div class="project-container">
-        <div class="tag"><p>#HTML/CSS</p></div>
-        <div class="tag"><p>#Angular</p></div>
-        <div class="tag"><p>#Agile</p></div>
-        <div class="tag"><p>#Javascript</p></div>
-        <div class="project" id="bpa">
-          <img src="img/bpa.png" alt="bpa">
-          <div class="description">
-            <h4>BPA Agile Hackathon Winner for company contract</h4>
-            <p>The week long agile hackathon of 200 companies was a competition for the best prototype
-utilizing a public dataset which was determined by the end prototype, agile development
-cycles, and user-centered design processes.
-
-My roles were the primary UI/UX designer and a member on the front-end development team.
-I built the UI using Bootstrap and the front-end framework using AngularJS. The web app
-consumes public available datasets from open.fda.gov about drugs and adverse events to
-provide users with important information about reactions</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- <div ng-include='"templates/footer.html"'></div> -->
 
 <!-- Vendor: Javascripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
