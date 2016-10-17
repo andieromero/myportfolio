@@ -149,7 +149,7 @@ h1{
   font-family: 'Oswald', sans-serif;
   color: #cdd422;
   font-size: 86px;
-  margin-left: 2em;
+  margin-left: 1em;
 }
 @media screen and (max-width: 767px) {
   h1 {
@@ -167,6 +167,13 @@ h2, li {
 }
 h3 {
   font-family: 'Lobster', cursive;
+}
+h4 {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 18px;
+  color: #e62739;
+  text-align: center;
+  font-weight: bold;
 }
 
 /*Header*/
@@ -323,7 +330,7 @@ a.navbar-brand img {
   #about-para {
     margin-top: 30px;
     margin-bottom: 50px;
-    width: 50%;
+    width: 70%;
   }
 }
 .yellow {
@@ -393,4 +400,53 @@ a.navbar-brand img {
   position: relative;
   display: block;
   margin-top: 30px;
+}
+
+img#fromdesign {
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+.work {
+  background-color: #f2faff;
+}
+.work h1 {
+  position: relative;
+  bottom: -30px;
+}
+.work-container {
+  padding-left: 135px;
+  padding-right: 135px;
+}
+
+.tag {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #cdd422;
+  display: inline-block;
+}
+.tag:first-child{
+  margin-left: 15px;
+}
+.tag p {
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+.project-container {
+  background-color: #ffffff;
+  padding-top: 20px;
+}
+.project {
+  margin-top: 15px;
+}
+.project img {
+  width: 100%;
+}
+.description {
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+.description p {
+  color: #000000;
 }

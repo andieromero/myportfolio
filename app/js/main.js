@@ -641,4 +641,4 @@ app.controller('PageCtrl', function (/* $scope, $location, $http */) {
 
 
 
-}).value('duScrollOffset', 100);
+}).value('duScrollOffset', 50);
