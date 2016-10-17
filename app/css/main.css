@@ -400,8 +400,16 @@ a.navbar-brand img {
   position: relative;
   display: block;
   margin-top: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
+#resume-button:hover {
+  background-color: #57599f;
+  color: #cdd422;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 img#fromdesign {
   max-width: 100%;
   margin-bottom: 50px;
@@ -435,7 +443,7 @@ img#fromdesign {
 }
 .project-container {
   background-color: #ffffff;
-  padding-top: 20px;
+  padding: 20px 20px;
 }
 .project {
   margin-top: 15px;
@@ -449,4 +457,35 @@ img#fromdesign {
 }
 .description p {
   color: #000000;
+}
+.project-button {
+  text-align: center;
+}
+.design {
+  background-color: #e62739;
+  color: #f2faff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 4px 15px;
+  border: none;
+}
+.design:hover {
+  background-color: #f2faff;
+  color: #e62739;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.github {
+  background-color: #e1e3e4;
+  color: #000000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 4px 15px;
+  border: none;
+}
+.github:hover {
+  background-color: #000000;
+  color: #e1e3e4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
