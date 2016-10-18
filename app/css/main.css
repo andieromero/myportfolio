@@ -422,9 +422,23 @@ img#fromdesign {
   position: relative;
   bottom: -30px;
 }
-.work-container {
-  padding-left: 135px;
-  padding-right: 135px;
+@media screen and (max-width: 559px) {
+  .work-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 660px) and (max-width: 1023px) {
+  .work-container {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+@media (min-width: 1024px){
+  .work-container {
+    padding-left: 135px;
+    padding-right: 135px;
+  }
 }
 
 .tag {
@@ -434,10 +448,11 @@ img#fromdesign {
   padding-right: 5px;
   background-color: #cdd422;
   display: inline-block;
+  margin-top: 4px;
 }
-.tag:first-child{
+/*.tag:first-child{
   margin-left: 15px;
-}
+}*/
 .tag p {
   color: #ffffff;
   margin-bottom: 0px;
@@ -476,6 +491,7 @@ img#fromdesign {
 .description p {
   color: #000000;
   text-align: justify;
+  line-height: 18px;
 }
 .project-button {
   text-align: center;
