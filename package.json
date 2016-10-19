@@ -15,7 +15,8 @@
     "angular-scroll": "^1.0.0",
     "animate.css": "^3.5.2",
     "bower": "1.7.9",
-    "express": "4.13.3"
+    "express": "4.13.3",
+    "waypoints": "^4.0.1"
   },
   "cacheDirectories": [
     "node_modules"
