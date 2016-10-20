@@ -167,6 +167,8 @@ h2, li {
 }
 h3 {
   font-family: 'Lobster', cursive;
+  color: #ffffff;
+  font-size: 42px;
 }
 h4 {
   font-family: 'Droid Sans', sans-serif;
@@ -410,10 +412,10 @@ a.navbar-brand img {
 }
 
 #resume-button:hover {
-  background-color: #57599f;
-  color: #cdd422;
+  background-color: #9c9c02;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  box-shadow: none;
 }
 img#fromdesign {
   max-width: 100%;
@@ -422,24 +424,24 @@ img#fromdesign {
 .work {
   background-color: #f2faff;
 }
-.work h1 {
+.work h1, .contact h1 {
   position: relative;
   bottom: -30px;
 }
 @media screen and (max-width: 559px) {
-  .work-container {
+  .work-container, .contact-container {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media (min-width: 660px) and (max-width: 1023px) {
-  .work-container {
+  .work-container, .contact-container {
     padding-left: 70px;
     padding-right: 70px;
   }
 }
 @media (min-width: 1024px){
-  .work-container {
+  .work-container, .contact-container {
     padding-left: 135px;
     padding-right: 135px;
   }
@@ -512,8 +514,7 @@ img#fromdesign {
   box-shadow: inset 0 -4px 1px -1px #b80213;
 }
 .design:hover {
-  background-color: #f2faff;
-  color: #e62739;
+  background-color: #b80213 ;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   box-shadow: none;
@@ -534,4 +535,68 @@ img#fromdesign {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   box-shadow: none;
+}
+@media screen and (max-width: 559px) {
+  .github, .design {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .description {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+
+
+
+
+/*CONTACT*/
+.contact{
+  background-color: #e1e3e4;
+}
+.contact-container {
+  margin-bottom: 50px;
+}
+.contact-tagline {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #e62739;
+}
+.contact-links a img {
+  margin-right: 8px;
+  width: 24px;
+  margin-bottom: 10px;
+}
+.contact-links a {
+  position: relative;
+  left: 34%;
+  font-size: 18px;
+}
+.contact-links {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 559px) {
+  .contact-links {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .contact-links a {
+    left: 0%;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 26px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 660px) and (max-width: 1023px) {
+  .contact-links a {
+    left: 24%;
+  }
 }
