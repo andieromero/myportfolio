@@ -1,0 +1,32 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h1 ng-model="heading" class="heading">{{heading}}
+                <small ng-model="subheading">{{subheading}}</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="../">Home</a>
+                </li>
+                <li><a href="../" scrollToWork>Work</a>
+                </li>
+                <li><a href="../" ng-model="heading">{{heading}}</a>
+                </li>
+                <li class="active">Design Process</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <div class="design-description" ng-repeat="x in designProcess">
+      <h3>{{x.heading}}</h3>
+      <p>{{x.description}}</p>
+    </div>
+
+    <hr>
+
+
+
+
+</div>

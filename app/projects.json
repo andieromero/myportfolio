@@ -1,0 +1,67 @@
+[
+  {
+    "heading": "Drug & Adverse Reaction Information",
+    "subheading": "BPA Agile Hackathon Winner for company contract",
+    "mainImg": "img/bpa.png",
+    "mainDescription": "The week long agile hackathon of 200 companies was a competition for the best prototype utilizing a public dataset which was determined by the end prototype, agile development cycles, and user-centered design processes. My roles were the primary UI/UX designer and a member on the front-end development team. I built the UI using Bootstrap and the front-end framework using AngularJS. The web app consumes public available datasets from open.fda.gov about drugs and adverse events to provide users with important information about reactions.",
+    "hashtags": [
+      "#HTML/CSS", "#Angular", "#Agile", "#Javascript"
+    ],
+    "designURL": "#/bpa",
+    "hasGithubURL": "true",
+    "githubURL": "",
+    "designProcess":[
+      {
+          "heading": "heading 1",
+          "description": "description"
+      },
+      {
+          "heading": "heading 2",
+          "description": "description"
+      }
+    ]
+  },
+  {
+    "heading": "San Diego Music Studio",
+    "subheading": "A redesign of a local business website",
+    "mainImg": "img/sdms.png",
+    "mainDescription": "This local, small business is well-established in the music community both online in ecommerce and in the greater San Diego area. With the growing client base, their website at the time was not at the Google SEO's standards, and more importantly, was not user friendly. I redesigned and developed their studio website to showcase their music teachers, a new brand, and reduce their content to the necessities. The website is now more readible, integrated with their facebook site, and much easier to maintain for the manager.",
+    "hashtags": [
+      "#HTML/CSS", "#Javascript", "#freelancework", "#prototyping"
+    ],
+    "designURL": "#/sdms",
+    "hasGithubURL": "true",
+    "githubURL": "",
+    "designProcess":[
+      {
+          "heading": "heading 1",
+          "description": "description"
+      },
+      {
+          "heading": "heading 2",
+          "description": "description"
+      }
+    ]
+  },
+  {
+    "heading": "OurUCSD",
+    "subheading": "A campaign challenging UCSD's educational environment",
+    "mainImg": "img/ourucsd.png",
+    "mainDescription": "This critical design project challenges students to question the current educational structure here at UCSD. The campaign is composed of physical and web media serving as propoganda for a revolutionized campus. This included large banners placed on hallmarks around campus, posters, fliers, and a website. The website plays off of a futuristic utopian school system. It is presented as if it has already happened. The website demonstrates the three different phases our ideal school would have. It also provides a google doc where students can voice their own questions about the current educational structure. ",
+    "hashtags": [
+      "#UX", "#CriticalDesign", "#ideation", "#prototyping", "#UserResearch", "#IssueMapping", "#DesignInEducation", "#HTML/CSS"
+    ],
+    "designURL": "#/ourucsd",
+    "hasGithubURL": "false",
+    "designProcess":[
+      {
+          "heading": "heading 1",
+          "description": "description"
+      },
+      {
+          "heading": "heading 2",
+          "description": "description"
+      }
+    ]
+  }
+]
