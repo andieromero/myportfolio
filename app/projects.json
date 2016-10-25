@@ -44,6 +44,27 @@
     ]
   },
   {
+    "heading": "Collide SD",
+    "subheading": "Data visualization of the effects of gentrification",
+    "mainImg": "img/gentrif.png",
+    "mainDescription": "Utilizing the Delphi public dataset and d3.js data visualization library, out team developed a platform that consumed relevant demographic information about several areas in San Diego to demonstrate the effects of gentrification. I contributed to most of the low and high fidelity prototypes, design documentation, and the UI of the website. The main objective of this assignment was to create useful meaning from Delphi's public dataset and to provide interactive visualization of the information. ",
+    "hashtags": [
+      "#HTML/CSS", "#Javascript", "#datamining", "d3js", "paperprototyping", "Axure"
+    ],
+    "designURL": "#/gentrif",
+    "hasGithubURL": "true",
+    "designProcess":[
+      {
+          "heading": "heading 1",
+          "description": "description"
+      },
+      {
+          "heading": "heading 2",
+          "description": "description"
+      }
+    ]
+  },
+  {
     "heading": "OurUCSD",
     "subheading": "A campaign challenging UCSD's educational environment",
     "mainImg": "img/ourucsd.png",

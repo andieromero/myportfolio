@@ -22,7 +22,8 @@ a few of my <span class="yellow">coding</span> and
 <span class="yellow">UX design</span> skills :-)</p>
   </div>
   <div class="about-brain">
-    <div class="row">
+    <img src="img/braindiagram.png" alt="skills">
+    <!-- <div class="row">
       <div class="skills col-xs-4" id="left">
         <p>-Java</p>
         <p>-C / C++ </p>
@@ -38,7 +39,7 @@ a few of my <span class="yellow">coding</span> and
         <p>-Adobe Illustrator</p>
         <p>-Responsive Design</p>
       </div>
-    </div>
+    </div> -->
   </div>
   <button href="" id="resume-button" class="animated fadeIn button">View full resume</button>
 </div>
@@ -57,8 +58,8 @@ a few of my <span class="yellow">coding</span> and
             <h4>{{project.heading}} - {{project.subheading}}</h4>
             <p>{{project.mainDescription}}</p>
             <div class="project-button">
-              <button class="design"><a ng-src="{{project.designURL}}">Design Process</a></button>
-              <button class="github" ng-show="{{project.hasGithubURL}}"><a ng-src="{{project.githubURL}}">Github</button>
+              <button class="design"><a ng-href="{{project.designURL}}">Design Process</a></button>
+              <button class="github" ng-show="{{project.hasGithubURL}}"><a ng-src="{{project.githubURL}}">Github</a></button>
             </div>
           </div>
         </div>
@@ -85,4 +86,3 @@ a few of my <span class="yellow">coding</span> and
     </div>
   </div>
 </div>
-<!-- <div ng-include='"templates/footer.html"'></div> -->

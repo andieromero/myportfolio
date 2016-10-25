@@ -614,22 +614,21 @@ angular.module('duScroll.scrollspy', ['duScroll.spyAPI'])
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     // Home
-    .when("/", {templateUrl: "partials/home.html", controller: "BPAProjCtrl"})
+    .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
     // .when("/index.html", {templateUrl: "partials/home.html", controller: "PageCtrl"})
     // Pages
     .when("/about", {templateUrl: "partials/about.html", controller: "PageCtrl"})
     .when("/pricing", {templateUrl: "partials/pricing.html", controller: "PageCtrl"})
     .when("/services", {templateUrl: "partials/services.html", controller: "PageCtrl"})
     .when("/contact", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
+    // projects
+    .when("/bpa", {templateUrl: "partials/project.html", controller: "PageCtrl"})
+    .when("/sdms", {templateUrl: "partials/project.html", controller: "PageCtrl"})
+    .when("/gentrif", {templateUrl: "partials/project.html", controller: "PageCtrl"})
+    .when("/ourucsd", {templateUrl: "partials/project.html", controller: "PageCtrl"})
     // Blog templates
     .when("/blog", {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
     .when("/blog/post", {templateUrl: "partials/blog_item.html", controller: "BlogCtrl"})
-    // Projects
-    .when("/bpa", {templateUrl: "partials/project.html", controller: "BPAProjCtrl"})
-    .when("/sdms", {templateUrl: "partials/project.html", controller: "SDMSProjCtrl"})
-    .when("/portfolio", {templateUrl: "partials/project.html", controller: "PortfolioProjCtrl"})
-    .when("/gentrif", {templateUrl: "partials/project.html", controller: "GentrifProjCtrl"})
-    .when("/ourucsd", {templateUrl: "partials/project.html", controller: "OurUCSDProjCtrl"})
     // else 404
     .otherwise("/404", { templateUrl: "partials/404.html", controller: "PageCtrl"});
 }]);
@@ -643,51 +642,66 @@ app.service("projectService", function($http, $q){
     return deferred.promise;
   }
 });
-
-app.controller('BPAProjCtrl', function($scope, projectService){
+/**
+ * Controls all other Pages
+ */
+app.controller('PageCtrl', function ($scope, projectService, $location) {
   var promise = projectService.getProjects();
+  // load the JSON
   promise.then(function(data){
+    // all projects
     $scope.projects = data.data;
-    console.log($scope.projects);
-    // $scope.heading = data.data[0].heading;
-    // $scope.subheading = data.data[0].subheading;
-    // $scope.designProcess = data.data[0].designProcess;
-    // $scope.mainImg = data.data[0].mainImg;
-    // $scope.hashtags = data.data[0].hashtags;
-    // $scope.mainDescription = data.data[0].mainDescription;
+    var url = $location.url();
+    switch (url) {
+          case "/bpa":
+            $scope.project = data.data[0];
+            break;
+          case "/sdms":
+            $scope.project = data.data[1];
+            break;
+          case "/gentrif":
+            $scope.project = data.data[2];
+            break;
+          case "/ourucsd":
+            $scope.project = data.data[3];
+            break;
+          case "/portfolio":
+            $scope.project = data.data[4];
+            break;
+        }
+    if (url == "/bpa")
+      $scope.project = data.data[0];
   });
-});
-app.controller('SDMSProjCtrl', function($scope, projectService){
+}).value('duScrollOffset', 50);
+
+app.controller('DesignCtrl', function($scope, $location, projectService){
   var promise = projectService.getProjects();
+  // load the JSON
   promise.then(function(data){
-    $scope.heading = data.data[1].heading;
-    $scope.subheading = data.data[1].subheading;
-    $scope.designProcess=data.data[1].designProcess;
+    // all projects
+    $scope.projects = data.data;
+    // depending on project url, set scope project to respective project
+    var url = $location.url();
+    switch (url) {
+      case "#/bpa":
+        $scope.project = data.data[0];
+        console.log($scope.project);
+        break;
+      case "#/sdms":
+        $scope.project = data.data[1];
+        break;
+      case "#/gentrif":
+        $scope.project = data.data[2];
+        break;
+      case "#/ourucsd":
+        $scope.project = data.data[3];
+        break;
+      case "#/portfolio":
+        $scope.project = data.data[4];
+        break;
+    }
   });
-});
-app.controller('PortfolioProjCtrl', function($scope, projectService){
-  var promise = projectService.getProjects();
-  promise.then(function(data){
-    $scope.heading = data.data[2].heading;
-    $scope.subheading = data.data[2].subheading;
-    $scope.designProcess=data.data[2].designProcess;
-  });
-});
-app.controller('GentrifProjCtrl', function($scope, projectService){
-  var promise = projectService.getProjects();
-  promise.then(function(data){
-    $scope.heading = data.data[3].heading;
-    $scope.subheading = data.data[3].subheading;
-    $scope.designProcess=data.data[3].designProcess;
-  });
-});
-app.controller('OurUCSDProjCtrl', function($scope, projectService){
-  var promise = projectService.getProjects();
-  promise.then(function(data){
-    $scope.heading = data.data[4].heading;
-    $scope.subheading = data.data[4].subheading;
-    $scope.designProcess=data.data[4].designProcess;
-  });
+
 });
 /**
  * Controls the Blog
@@ -696,14 +710,7 @@ app.controller('BlogCtrl', function (/* $scope, $location, $http */) {
   console.log("Blog Controller reporting for duty.");
 });
 
-/**
- * Controls all other Pages
- */
-app.controller('PageCtrl', function (/* $scope, $location, $http */) {
 
-
-
-}).value('duScrollOffset', 50);
 
 
 /*Directives*/
