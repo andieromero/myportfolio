@@ -318,6 +318,9 @@ a.navbar-brand img {
   .about {
     padding-top: 10px;
   }
+  .about-brain img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -325,6 +328,9 @@ a.navbar-brand img {
     width: 65%;
     font-size: 16px;
     line-height: 20px;
+  }
+  .about-brain img {
+    width: 100%;
   }
 }
 
