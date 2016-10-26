@@ -626,6 +626,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/sdms", {templateUrl: "partials/project.html", controller: "PageCtrl"})
     .when("/gentrif", {templateUrl: "partials/project.html", controller: "PageCtrl"})
     .when("/ourucsd", {templateUrl: "partials/project.html", controller: "PageCtrl"})
+    .when("/portfolio", {templateUrl: "partials/project.html", controller: "PageCtrl"})
     // Blog templates
     .when("/blog", {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
     .when("/blog/post", {templateUrl: "partials/blog_item.html", controller: "BlogCtrl"})
@@ -645,7 +646,7 @@ app.service("projectService", function($http, $q){
 /**
  * Controls all other Pages
  */
-app.controller('PageCtrl', function ($scope, projectService, $location) {
+app.controller('PageCtrl', function ($scope, projectService, $location, $window) {
   var promise = projectService.getProjects();
   // load the JSON
   promise.then(function(data){
@@ -668,41 +669,17 @@ app.controller('PageCtrl', function ($scope, projectService, $location) {
           case "/portfolio":
             $scope.project = data.data[4];
             break;
-        }
-    if (url == "/bpa")
-      $scope.project = data.data[0];
-  });
-}).value('duScrollOffset', 50);
-
-app.controller('DesignCtrl', function($scope, $location, projectService){
-  var promise = projectService.getProjects();
-  // load the JSON
-  promise.then(function(data){
-    // all projects
-    $scope.projects = data.data;
-    // depending on project url, set scope project to respective project
-    var url = $location.url();
-    switch (url) {
-      case "#/bpa":
-        $scope.project = data.data[0];
-        console.log($scope.project);
-        break;
-      case "#/sdms":
-        $scope.project = data.data[1];
-        break;
-      case "#/gentrif":
-        $scope.project = data.data[2];
-        break;
-      case "#/ourucsd":
-        $scope.project = data.data[3];
-        break;
-      case "#/portfolio":
-        $scope.project = data.data[4];
-        break;
+    }
+    $scope.githubUrl = function(){
+      $window.location.href = $scope.project.githubURL;
+    }
+    $scope.projectUrl = function(){
+      $window.location.href = $scope.project.projectURL;
     }
   });
 
-});
+}).value('duScrollOffset', 50);
+
 /**
  * Controls the Blog
  */

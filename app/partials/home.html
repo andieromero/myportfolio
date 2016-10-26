@@ -1,8 +1,15 @@
 <div class="fullPage" id="fullPage">
 
   <div ng-include='"templates/header.html" '></div>
-  <div class="landing">
-    <img src="img/landing-nolayer.png" alt="landing" id="landing" class="animated fadeIn">
+  <div class="alt-landing">
+    <div class="headliner">
+      <h2 class="animated slideInDown">Hi there, I'm <span>Andie.</span> Find me where</h2>
+      <h1><span class="animated slideInLeft">DESIGN </span><span class="animated slideInRight" id="plus"> + </span><span class="animated slideInRight"> CODE </span></h1>
+      <h2 class="animated slideInUp">collide.
+    </div>
+  </div>
+  <div class="landing" style="display:none;">
+    <img src="img/landing-nolayer.png" alt="landing" id="landing" class="animated fadeIn" >
     <img src="img/landing-mobile.png" alt="landing" id="landing-mobile" class="animated fadeIn">
   </div>
 </div>
@@ -14,12 +21,11 @@
     <p id="about-para">I want to empower users with intuitive, enjoyable
 interfaces and products that will impact their daily lives.
 A recent graduate from UC San Diego, I am excited to
-begin a career that will allow me to explore the human -
-computer space. I studied cognitive functions of the brain, human behavior,
+begin a career that will allow me to explore the human-computer space. I studied the cognitive functions of the brain, human behavior,
 and several programming languages, providing me with a diverse
-set of skills. Enjoy the brainy cogsci metaphor to see
-a few of my <span class="yellow">coding</span> and
-<span class="yellow">UX design</span> skills :-)</p>
+set of skills. Explore my <span class="yellow">left</span> and
+<span class="yellow">right</span> brain to see my <span class="yellow">logical</span> and
+<span class="yellow">creative</span> skills.</p>
   </div>
   <div class="about-brain">
     <img src="img/braindiagram.png" alt="skills" id="braindiagram">
@@ -39,11 +45,11 @@ a few of my <span class="yellow">coding</span> and
         <div class="project" id="bpa">
           <img ng-src="{{project.mainImg}}" alt="project">
           <div class="description">
-            <h4>{{project.heading}} - {{project.subheading}}</h4>
+            <h4>{{project.heading}} - {{project.subheading}}</h4><a ng-click="projectUrl()" ng-show={{project.hasProjectURL}}><img src="img/link.png" alt="linkto"></a>
             <p>{{project.mainDescription}}</p>
             <div class="project-button">
               <button class="design"><a ng-href="{{project.designURL}}">Design Process</a></button>
-              <button class="github" ng-show="{{project.hasGithubURL}}"><a ng-src="{{project.githubURL}}">Github</a></button>
+              <button class="github" ng-show="{{project.hasGithubURL}}"><a ng-click="githubUrl()">Github</a></button>
             </div>
           </div>
         </div>

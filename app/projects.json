@@ -9,7 +9,8 @@
     ],
     "designURL": "#/bpa",
     "hasGithubURL": "true",
-    "githubURL": "",
+    "hasProjectURL": "false",
+    "githubURL": "https://github.com/TFlowGit/tf-ads-bpa",
     "designProcess":[
       {
           "heading": "heading 1",
@@ -30,8 +31,10 @@
       "#HTML/CSS", "#Javascript", "#freelancework", "#prototyping"
     ],
     "designURL": "#/sdms",
+    "hasProjectURL": "true",
+    "projectURL": "http://sandiegomusicstudio.com/",
     "hasGithubURL": "true",
-    "githubURL": "",
+    "githubURL": "https://github.com/andrianabeltran/SDMSDesign",
     "designProcess":[
       {
           "heading": "heading 1",
@@ -52,6 +55,8 @@
       "#HTML/CSS", "#Javascript", "#datamining", "d3js", "paperprototyping", "Axure"
     ],
     "designURL": "#/gentrif",
+    "hasProjectURL": "true",
+    "projectURL": "http://sd-gentrif.herokuapp.com/",
     "hasGithubURL": "true",
     "designProcess":[
       {
@@ -73,7 +78,30 @@
       "#UX", "#CriticalDesign", "#ideation", "#prototyping", "#UserResearch", "#IssueMapping", "#DesignInEducation", "#HTML/CSS"
     ],
     "designURL": "#/ourucsd",
+    "hasProjectURL": "false",
     "hasGithubURL": "false",
+    "designProcess":[
+      {
+          "heading": "heading 1",
+          "description": "description"
+      },
+      {
+          "heading": "heading 2",
+          "description": "description"
+      }
+    ]
+  },
+  {
+    "heading": "andrianaromero@herokuapp.com",
+    "subheading": "Portfolio website showcasing my CS and UX work",
+    "mainImg": "img/portfolio.png",
+    "mainDescription": "This is my personal portfolio that showcases my past work and projects. Designed on low and high fidelity prototypes, my website's color palette, fonts, and other design attributes exhibit my personality. To showcase my front end development skills, this website is fully developed with AngularJS and deployed on Heroku. Feel free to browse my github to examine the framework and code.",
+    "hashtags": [
+      "Angular","#UX", "#lowfi", "highfi", "#HTML/CSS", "Javascript", "Adobe Illustrator"
+    ],
+    "designURL": "#/portfolio",
+    "hasGithubURL": "true",
+    "githubURL": "https://github.com/andrianabeltran/myportfolio/",
     "designProcess":[
       {
           "heading": "heading 1",
