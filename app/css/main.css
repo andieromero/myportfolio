@@ -472,6 +472,7 @@ a.navbar-brand img {
 }
 .yellow {
   color: #cdd422;
+  font-weight: bold;
 }
 .about-brain{
   /*background-color: #9495C1;*/
@@ -549,7 +550,9 @@ a.navbar-brand img {
   position: relative;
   right: 13px;
 }
-
+a {
+  text-decoration: none !important;
+}
 #resume-button:hover {
   background-color: #9c9c02;
   -webkit-transition: 0.5s;
