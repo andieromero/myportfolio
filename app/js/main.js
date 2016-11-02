@@ -671,14 +671,20 @@ app.controller('PageCtrl', function ($scope, projectService, $location, $window)
             break;
     }
     $scope.githubUrl = function(){
-      $window.location.href = $scope.project.githubURL;
+      // $window.location.href = $scope.project.githubURL;
+      // open in new window
+      $window.open($scope.project.githubURL, '_blank');
     }
-    $scope.projectUrl = function(){
-      $window.location.href = $scope.project.projectURL;
+    $scope.contactUrl = function(url){
+      if (url == "github")
+        $window.open('https://github.com/andrianabeltran', '_blank');
+      else if (url == "gmail")
+       $window.open('mailto:andriana@beltranfamily.com', '_self');
+      else $window.open('https://www.linkedin.com/in/andrianab', '_blank');
     }
   });
 
-}).value('duScrollOffset', 50);
+});
 
 /**
  * Controls the Blog

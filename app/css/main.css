@@ -166,7 +166,7 @@ h2, li {
   font-family: 'Fjalla One', sans-serif;
 }
 h3 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Droid Sans', sans-serif;
   color: #ffffff;
   font-size: 30px;
 }
@@ -713,12 +713,26 @@ img#fromdesign {
   padding-bottom: 50px;
   background-color: #e62739;
 }
-.contact-links a img {
-  margin-right: 8px;
-  width: 24px;
+@media screen and (max-width:767px){
+  .contact-links a img {
+    margin-right: 4px;
+    margin-left: 4px;
+    width: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .contact-links a img {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 54px;
+  }
 }
 .contact-links a {
   position: relative;
+}
+.contact-links a img:hover {
+  opacity: .8;
+  cursor: pointer;
 }
 .contact-links {
   margin-left: auto;
@@ -729,10 +743,89 @@ img#fromdesign {
 
 
 /* DESIGN PROCESS */
-.heading {
-  margin-left: 0;
-  font-size: 64px;
+.dp a.home {
+  position: fixed;
+  left: 45px;
+  top: 45px;
+  font-size: 18px;
 }
-.subheading {
-  font-size: 40%;
+.dp a img.home {
+  width: 13px;
+  margin-right: 5px;
+  /*position: fixed;*/
+  bottom: 1px;
+  float: initial;
+  display: inline;
+}
+.heading h1 {
+  margin-left: 0;
+  font-size: 58px;
+  color: #e62739;
+  text-align: center;
+  margin-top: 40px;
+}
+.heading small {
+  font-size: 45%;
+  position: relative;
+  bottom: 10px;
+}
+.dp .container, .dp .row {
+  margin-top: 30px;
+}
+
+.dp img#designImg {
+  width: 65%;
+  position: relative;
+  display: block;
+  float: right;
+}
+.dp h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color:#CDD422;
+  font-size: 18px;
+  font-weight: bold;
+  float: left;
+  width: 80px;
+}
+.dp img {
+  width: 16px;
+  margin-right: 10px;
+  float: inherit;
+}
+.dp h4 {
+  font-size: 16px;
+  color: #333333;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.overview h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.summary h2, .content h2 {
+  text-align: center;
+}
+.design-content {
+  background-color: #f2faff;
+}
+hr {
+  border: 1px solid #ced1d3;
+}
+.content .container {
+  width: 95%;
+}
+.content img {
+  width: 100%;
+}
+.content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.content h4 {
+  color: #CDD422;
+  font-size: 22px;
 }

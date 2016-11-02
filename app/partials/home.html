@@ -47,7 +47,7 @@ set of skills. Explore my <span class="yellow">left</span> and
             <p>{{project.mainDescription}}</p>
             <div class="project-button">
               <button class="design"><a ng-href="{{project.designURL}}">Design Process</a></button>
-              <button class="github" ng-show="{{project.hasGithubURL}}"><a ng-click="githubUrl()">Github</a></button>
+              <button class="github" ng-show="{{project.hasGithubURL}}"><a ng-click="githubUrl()" target="_blank">Github</a></button>
             </div>
           </div>
         </div>
@@ -62,11 +62,11 @@ set of skills. Explore my <span class="yellow">left</span> and
     <h1>CONTACT.</h1>
     <div class="contact-container">
       <div class="contact-tagline">
-        <h3>Andie Romero</h3>
+        <h3>Andriana (Andie) Romero</h3>
         <div class="contact-links">
-          <a href=""><img src="img/gmail.png" alt="gmail"></a>
-          <a href=""><img src="img/github.png" alt="github"></a>
-          <a href=""><img src="img/linkedin.png" alt="linkedin"></a>
+          <a href="mailto:andriana@beltranfamily.com"><img src="img/gmail.png" alt="gmail"></a>
+          <a ng-click="contactUrl('github')"><img src="img/github.png" alt="github"></a>
+          <a ng-click="contactUrl('linkedin')"><img src="img/linkedin.png" alt="linkedin"></a>
         </div>
       </div>
     </div>

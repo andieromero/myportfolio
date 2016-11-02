@@ -3,22 +3,47 @@
     "heading": "Drug & Adverse Reaction Information",
     "subheading": "BPA Agile Hackathon Winner for company contract",
     "mainImg": "img/bpa.png",
-    "mainDescription": "The week long agile hackathon of 200 companies was a competition for the best prototype utilizing a public dataset which was determined by the end prototype, agile development cycles, and user-centered design processes. My roles were the primary UI/UX designer and a member on the front-end development team. I built the UI using Bootstrap and the front-end framework using AngularJS. The web app consumes public available datasets from open.fda.gov about drugs and adverse events to provide users with important information about reactions.",
+    "mainDescription": "The week long agile hackathon of 200 companies was a competition for the best prototype utilizing a public dataset which was determined by the final MVP, agile development cycles, and user-centered design processes. My roles were the primary UI/UX designer and front-end web developer. We built the UI using Bootstrap and the front-end framework using AngularJS. The web app consumes public available datasets from open.fda.gov about drugs and adverse events to provide users with important information about reactions to prescription drugs.",
     "hashtags": [
-      "#HTML/CSS", "#Angular", "#Agile", "#Javascript"
+      "#HTML/CSS", "#Angular", "#Agile", "#Javascript", "#datavisualizations"
     ],
     "designURL": "#/bpa",
     "hasGithubURL": "true",
     "hasProjectURL": "false",
     "githubURL": "https://github.com/TFlowGit/tf-ads-bpa",
+    "designImg": "img/bpa-desktop.png",
+    "role": "UI/UX Designer and Front-end Developer",
+    "tools": "whiteboard, pen & paper, bootstrap, angularjs ",
+    "brief": "DARI is TechFlow's MVP (Minimal Viable Product) submission to 18F Consulting's Agile BPA (Blanket Purchase Agreement) Hackathon utilizing FDA's public datasets.",
+    "deliverables": ["MVP utilizing openFDA's API to provide a web service", "documentation of Agile approach", "documentation of UX design process", "Agile outline for one product increment"],
+    "goals": ["implement query or look-up based service", "visualize adverse event statistics with interactivity", "maintain the recognizable design or look of a traditional drug label"],
     "designProcess":[
       {
-          "heading": "heading 1",
-          "description": "description"
+          "heading": "AGILE APPROACH",
+          "img": "img/bpa-sprintcycle.png",
+          "paragraph": "Our Agile team of about 15 employees at TechFlow each held specific responsibilities to deliver a working prototype using datasets from openFDA.gov. Below outlines the 7 stages of the Agile Approach which was carried out in a week and a half. The github repo outlines the approach in further detail.",
+          "subheadings": [
+            {
+              "heading": "Stage 1: Vision",
+              "img": "true",
+              "paragraph": "The first meeting the team accomplished several visionary goals - determining how the FDA data will be employed, establishing user personas, identifying human centered design features that would be useful and appealing, and definining the technical architecture."
+            },
+            {
+              "heading": "Stage 2: Product Roadmap",
+              "img": "true",
+              "paragraph": "After the visionary meeting, the team defined the MVP, drafted the roadmap for the features to be implemented for the week, finalized user stories, prioritized backlog, and setup the technical environment (AWS and github accounts)."
+            },
+            {
+              "heading": "Stage 3: Release Planning",
+              "img": "true",
+              "paragraph": "At this stage, we refined the roadmap for features based on team capability, plan the test development approach used to validate user stories, schedule 2 releases into production, and finalize the Definition of Done for each deliverable."
+            }
+          ]
       },
       {
-          "heading": "heading 2",
-          "description": "description"
+          "heading": "MY TAKEAWAYS",
+          "description": "description",
+          "img": "true"
       }
     ]
   },
@@ -52,7 +77,7 @@
     "mainImg": "img/gentrif.png",
     "mainDescription": "Utilizing the Delphi public dataset and d3.js data visualization library, out team developed a platform that consumed relevant demographic information about several areas in San Diego to demonstrate the effects of gentrification. I contributed to most of the low and high fidelity prototypes, design documentation, and the UI of the website. The main objective of this assignment was to create useful meaning from Delphi's public dataset and to provide interactive visualization of the information. ",
     "hashtags": [
-      "#HTML/CSS", "#Javascript", "#datamining", "d3js", "paperprototyping", "Axure"
+      "#HTML/CSS", "#Javascript", "#datamining", "#d3js", "#paperprototyping", "#Axure"
     ],
     "designURL": "#/gentrif",
     "hasProjectURL": "true",
