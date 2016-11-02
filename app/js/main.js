@@ -627,6 +627,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/gentrif", {templateUrl: "partials/project.html", controller: "PageCtrl"})
     .when("/ourucsd", {templateUrl: "partials/project.html", controller: "PageCtrl"})
     .when("/portfolio", {templateUrl: "partials/project.html", controller: "PageCtrl"})
+    .when("/uofl", {templateUrl: "partials/project.html", controller: "PageCtrl"})
     // Blog templates
     .when("/blog", {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
     .when("/blog/post", {templateUrl: "partials/blog_item.html", controller: "BlogCtrl"})
@@ -669,6 +670,9 @@ app.controller('PageCtrl', function ($scope, projectService, $location, $window)
           case "/portfolio":
             $scope.project = data.data[4];
             break;
+          case "/uofl":
+            $scope.project = data.data[5];
+            break;
     }
     $scope.githubUrl = function(){
       // $window.location.href = $scope.project.githubURL;
@@ -681,6 +685,9 @@ app.controller('PageCtrl', function ($scope, projectService, $location, $window)
       else if (url == "gmail")
        $window.open('mailto:andriana@beltranfamily.com', '_self');
       else $window.open('https://www.linkedin.com/in/andrianab', '_blank');
+    }
+    $scope.projectUrl = function(){
+      $window.open($scope.project.projectURL, '_blank');
     }
   });
 

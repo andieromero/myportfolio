@@ -63,7 +63,7 @@
       },
       {
           "heading": "MY TAKEAWAYS",
-          "paragraph": "The BPA Hackathon was my favorite experience during my summer internship at TechFlow. While our development team followed the Agile methodologies, the hackathon exposed me to all parts of the Agile methods that I was often not part of in the regular environment. Although I was an intern, the scrum team assigned me the primary UI designer which proved to be quite challenging given the numerous development and time constraints. With this primary role, I worked closely with the product owner and business analysts who provided me guidance in creating the paper or whiteboard prototypes. Although I was involved in the user story and persona creation, not being involved in the user testing strained my understanding of the end user. I was the primary HTML/CSS developer, with some Angular tasks used in the consumption and rendering of the data passed from the API.  ",
+          "paragraph": "",
           "img": "true"
       }
     ]
@@ -86,14 +86,23 @@
     "role": "UI/UX Designer and Front End Developer",
     "tools": "sketchbook & pens, bootstrap, less",
     "brief": "The reponsive website of San Diego Music Studio (SDMS) is a redesign of an outdated ecommerce website",
+    "deliverables": [ "specified menu items and features given by manager","instructor biographies", "facebook feed", "google map integration", "quick rentals of popular items"],
+    "goals": ["minimize content from existing website", "demonstrate a family-friendly, local business brand", "show SDMS as a prominent presence in music community"],
     "designProcess":[
       {
-          "heading": "heading 1",
-          "description": "description"
+          "heading": "DELIVERABLES DETERMINED BY STORE MANAGER",
+          "img": "true",
+          "description": ""
       },
       {
-          "heading": "heading 2",
-          "description": "description"
+          "heading": "TRELLO BOARD FOR TASK PROCESSING",
+          "img": "true",
+          "description": ""
+      },
+      {
+          "heading": "MY TAKEAWAYS",
+          "paragraph": "The BPA Hackathon was my favorite experience during my summer internship at TechFlow. While our development team followed the Agile methodologies, the hackathon exposed me to all parts of the Agile methods that I was often not part of in the regular environment. Although I was an intern, the scrum team assigned me the primary UI designer which proved to be quite challenging given the numerous development and time constraints. With this primary role, I worked closely with the product owner and business analysts who provided me guidance in creating the paper or whiteboard prototypes. Although I was involved in the user story and persona creation, not being involved in the user testing strained my understanding of the end user. I was the primary HTML/CSS developer, with some Angular tasks used in the consumption and rendering of the data passed from the API.  ",
+          "img": "true"
       }
     ]
   },
@@ -151,9 +160,9 @@
     "mainImg": "img/portfolio.png",
     "mainDescription": "This is my personal portfolio that showcases my past work and projects. Designed on low and high fidelity prototypes, my website's color palette, fonts, and other design attributes exhibit my personality. To showcase my front end development skills, this website is fully developed with AngularJS and deployed on Heroku. Feel free to browse my github to examine the framework and code.",
     "hashtags": [
-      "Angular","#UX", "#lowfi", "highfi", "#HTML/CSS", "Javascript", "Adobe Illustrator"
+      "#Angular","#UX", "#lowfi", "#highfi", "#HTML/CSS", "#Javascript", "#Adobe Illustrator"
     ],
-    "designURL": "#/portfolio",
+    "designURL": "#/uofl",
     "hasGithubURL": "true",
     "githubURL": "https://github.com/andrianabeltran/myportfolio/",
     "designProcess":[
@@ -164,6 +173,76 @@
       {
           "heading": "heading 2",
           "description": "description"
+      }
+    ]
+  },
+  {
+    "projectID": "uofl",
+    "heading": "University of Leicester",
+    "subheading": "Usability Evaluation and Redesign",
+    "mainImg": "img/uofl.png",
+    "mainDescription": "University websites like the 2013 version of University of Leicester's website can have up to dozens to hundreds of levels in their navigation or architecture. With several different user personas mapped to an even larger set of user end goals, identifying and prioritizing user stories often becomes difficult to weigh. This 5 week project consisted of several different usability evaluations of the university website, restructuring of the information architecture based on these results, and a final redesign/implementation of the website down to 3 navigation levels.",
+    "hashtags": [
+      "#InformationArchitecture", "#Usability", "#HTML/CSS", "#UserStories", "#UseCases",  "#CompAnalysis"
+    ],
+    "designURL": "#/uofl",
+    "hasGithubURL": "false",
+    "hasProjectURL": "true",
+    "projectURL": "uofleicester/index.html",
+    "githubURL": "https://github.com/TFlowGit/tf-ads-bpa",
+    "designImg": "img/bpa-desktop.png",
+    "role": "UI/UX Designer",
+    "tools": "pen & paper, Illustrator ",
+    "brief": "",
+    "deliverables": ["MVP utilizing openFDA's API to provide a web service", "documentation of Agile approach", "documentation of UX design process", "Agile outline for one product increment"],
+    "goals": ["implement query or look-up based service", "visualize adverse event statistics with interactivity", "maintain the recognizable design or look of a traditional drug label"],
+    "designProcess":[
+      {
+          "heading": "AGILE APPROACH",
+          "img": "img/bpa-sprintcycle.png",
+          "paragraph": "Our Agile team of about 15 employees at TechFlow each held specific responsibilities to deliver a working prototype using datasets from openFDA.gov. Below outlines the 7 stages of the Agile Approach which was carried out in a week and a half. The github repo outlines the approach in further detail.",
+          "subheadings": [
+            {
+              "heading": "Stage 1: Vision",
+              "img": "true",
+              "paragraph": "The first meeting the team accomplished several visionary goals - determining how the FDA data will be employed, establishing user personas, identifying human centered design features that would be useful and appealing, and definining the technical architecture."
+            },
+            {
+              "heading": "Stage 2: Product Roadmap",
+              "img": "true",
+              "paragraph": "After the visionary meeting, the team defined the MVP, drafted the roadmap for the features to be implemented for the week, finalized user stories, prioritized backlog, and setup the technical environment (AWS and github accounts)."
+            },
+            {
+              "heading": "Stage 3: Release Planning",
+              "img": "true",
+              "paragraph": "At this stage, we refined the roadmap for features based on team capability, planned the test development approach used to validate user stories, scheduled 2 releases into production, and finalized the Definition of Done for each deliverable."
+            },
+            {
+              "heading": "Stage 4: Sprint Planning",
+              "img": "true",
+              "paragraph": "We narrowed down the iterative approach which included 2 sprints focused on the highest priority features. Based on these 2 sprints, the sprint backlog was updated with clearer tasks for the week, specific user stories for the MVP were identified for the current backlog as well as the next production increment, and previous environment issues were resolved."
+            },
+            {
+              "heading": "Stage 5: Daily Scrum",
+              "img": "true",
+              "paragraph": "Led by the scrum master, our 15 minute daily scrums were crucial in the design and development of the prototype. Each meeting, the team identified completed items from the previous day, discussed blockers, and communicated other concerns related to project coordination."
+            },
+            {
+              "heading": "Stage 6: Sprint Review",
+              "img": "true",
+              "paragraph": "The two sprint review meetings ensured that the prototype had reached the goals for that sprint in accordance to the user stories and goals. The feedback from the User Acceptance Testing(UAT) determined whether the product owner would approve of the progress as it met the criteria."
+            },
+            {
+              "heading": "Stage 7: Sprint Retrospective",
+              "img": "true",
+              "paragraph": "This stage differs from Sprint Review because the main goal is to assess the processes and performance of the scrum team. An example of the questions asked at this meeting is - Did we meet our expected results? We looked at the sprint burn-down to compare planned versus actual work accomplished."
+            }
+          ]
+      },
+      {
+          "heading": "MY TAKEAWAYS",
+          "paragraph": "The BPA Hackathon was my favorite experience during my summer internship at TechFlow. While our development team followed the Agile methodologies, the hackathon exposed me to all parts of the Agile methods that I was often not part of in the regular environment. Although I was an intern, the scrum team assigned me the primary UI designer which proved to be quite challenging given the numerous development and time constraints. With this primary role, I worked closely with the product owner and business analysts who provided me guidance in creating the paper or whiteboard prototypes. Although I was involved in the user story and persona creation, not being involved in the user testing strained my understanding of the end user. I was the primary HTML/CSS developer, with some Angular tasks used in the consumption and rendering of the data passed from the API.  ",
+          "img": "true"
       }
     ]
   }
