@@ -1,5 +1,6 @@
 [
   {
+    "projectID": "bpa",
     "heading": "Drug & Adverse Reaction Information",
     "subheading": "BPA Agile Hackathon Winner for company contract",
     "mainImg": "img/bpa.png",
@@ -12,7 +13,7 @@
     "hasProjectURL": "false",
     "githubURL": "https://github.com/TFlowGit/tf-ads-bpa",
     "designImg": "img/bpa-desktop.png",
-    "role": "UI/UX Designer and Front-end Developer",
+    "role": "UI/UX Designer and Front End Developer",
     "tools": "whiteboard, pen & paper, bootstrap, angularjs ",
     "brief": "DARI is TechFlow's MVP (Minimal Viable Product) submission to 18F Consulting's Agile BPA (Blanket Purchase Agreement) Hackathon utilizing FDA's public datasets.",
     "deliverables": ["MVP utilizing openFDA's API to provide a web service", "documentation of Agile approach", "documentation of UX design process", "Agile outline for one product increment"],
@@ -36,18 +37,39 @@
             {
               "heading": "Stage 3: Release Planning",
               "img": "true",
-              "paragraph": "At this stage, we refined the roadmap for features based on team capability, plan the test development approach used to validate user stories, schedule 2 releases into production, and finalize the Definition of Done for each deliverable."
+              "paragraph": "At this stage, we refined the roadmap for features based on team capability, planned the test development approach used to validate user stories, scheduled 2 releases into production, and finalized the Definition of Done for each deliverable."
+            },
+            {
+              "heading": "Stage 4: Sprint Planning",
+              "img": "true",
+              "paragraph": "We narrowed down the iterative approach which included 2 sprints focused on the highest priority features. Based on these 2 sprints, the sprint backlog was updated with clearer tasks for the week, specific user stories for the MVP were identified for the current backlog as well as the next production increment, and previous environment issues were resolved."
+            },
+            {
+              "heading": "Stage 5: Daily Scrum",
+              "img": "true",
+              "paragraph": "Led by the scrum master, our 15 minute daily scrums were crucial in the design and development of the prototype. Each meeting, the team identified completed items from the previous day, discussed blockers, and communicated other concerns related to project coordination."
+            },
+            {
+              "heading": "Stage 6: Sprint Review",
+              "img": "true",
+              "paragraph": "The two sprint review meetings ensured that the prototype had reached the goals for that sprint in accordance to the user stories and goals. The feedback from the User Acceptance Testing(UAT) determined whether the product owner would approve of the progress as it met the criteria."
+            },
+            {
+              "heading": "Stage 7: Sprint Retrospective",
+              "img": "true",
+              "paragraph": "This stage differs from Sprint Review because the main goal is to assess the processes and performance of the scrum team. An example of the questions asked at this meeting is - Did we meet our expected results? We looked at the sprint burn-down to compare planned versus actual work accomplished."
             }
           ]
       },
       {
           "heading": "MY TAKEAWAYS",
-          "description": "description",
+          "paragraph": "The BPA Hackathon was my favorite experience during my summer internship at TechFlow. While our development team followed the Agile methodologies, the hackathon exposed me to all parts of the Agile methods that I was often not part of in the regular environment. Although I was an intern, the scrum team assigned me the primary UI designer which proved to be quite challenging given the numerous development and time constraints. With this primary role, I worked closely with the product owner and business analysts who provided me guidance in creating the paper or whiteboard prototypes. Although I was involved in the user story and persona creation, not being involved in the user testing strained my understanding of the end user. I was the primary HTML/CSS developer, with some Angular tasks used in the consumption and rendering of the data passed from the API.  ",
           "img": "true"
       }
     ]
   },
   {
+    "projectID": "sdms",
     "heading": "San Diego Music Studio",
     "subheading": "A redesign of a local business website",
     "mainImg": "img/sdms.png",
@@ -60,6 +82,10 @@
     "projectURL": "http://sandiegomusicstudio.com/",
     "hasGithubURL": "true",
     "githubURL": "https://github.com/andrianabeltran/SDMSDesign",
+    "designImg": "img/sdms-desktop.png",
+    "role": "UI/UX Designer and Front End Developer",
+    "tools": "sketchbook & pens, bootstrap, less",
+    "brief": "The reponsive website of San Diego Music Studio (SDMS) is a redesign of an outdated ecommerce website",
     "designProcess":[
       {
           "heading": "heading 1",
@@ -72,6 +98,7 @@
     ]
   },
   {
+    "projectID": "collide",
     "heading": "Collide SD",
     "subheading": "Data visualization of the effects of gentrification",
     "mainImg": "img/gentrif.png",
@@ -95,6 +122,7 @@
     ]
   },
   {
+    "projectID": "ourucsd",
     "heading": "OurUCSD",
     "subheading": "A campaign challenging UCSD's educational environment",
     "mainImg": "img/ourucsd.png",
@@ -117,6 +145,7 @@
     ]
   },
   {
+    "projectID": "portfolio",
     "heading": "andrianaromero@herokuapp.com",
     "subheading": "Portfolio website showcasing my CS and UX work",
     "mainImg": "img/portfolio.png",

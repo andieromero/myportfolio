@@ -1,5 +1,5 @@
 <div class="dp">
-  <a href="../" class="home"><img src="img/left-blue.png" alt="home" class="home">Back home</a>
+  <a href="../" class="home"><img src="img/left-blue.png" alt="home" class="home">Home</a>
   <!-- <div class="container"> -->
 
       <div class="row heading">
@@ -9,25 +9,16 @@
                   <br>
                   <small ng-model="subheading">{{project.subheading}}</small>
               </h1>
-              <!-- <ol class="breadcrumb">
-                  <li><a href="../">Home</a>
-                  </li>
-                  <li><a href="../" scrollToWork>Work</a>
-                  </li>
-                  <li><a href="../" ng-model="project.heading">{{project.heading}}</a>
-                  </li>
-                  <li class="active">Design Process</li>
-              </ol> -->
           </div>
       </div>
   <div class="design-content">
     <div class="container">
       <div class="container">
           <div class="row overview">
-              <div class="col-md-4">
+              <div class="col-sm-4 col-xs-12">
                 <img ng-src="{{project.designImg}}" alt="project" id="designImg">
               </div>
-              <div class="col-md-8">
+              <div class="col-sm-8 col-xs-12">
                 <h2>OVERVIEW</h2>
                 <img src="img/right.png" alt="role"><h3>BRIEF: </h3><h4>{{project.brief}}</h4>
                 <br>
@@ -42,11 +33,11 @@
       <hr>
 
       <div class="row summary">
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <h2>PRODUCT DELIVERABLES<h2>
           <h4 ng-repeat="deliverable in project.deliverables"><img src="img/right.png" alt="role"><span>{{deliverable}}</span><br><br></h4>
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <h2>DESIGN GOALS<h2>
             <h4 ng-repeat="goal in project.goals"><img src="img/right.png" alt="role"><span>{{goal}}</span><br><br></h4>
         </div>
@@ -68,6 +59,30 @@
             </div>
             <hr>
           </div>
+      </div>
+
+
+      <div>
+        <h2>Other Work</h2>
+        <div class="row">
+          <!-- dont show the project if this is the current project's page using ng-if-->
+          <div class=" col-md-4 col-sm-6 col-xs-12" ng-controller="PageCtrl" ng-repeat="proj in projects" ng-if="project.projectID != proj.projectID">
+            <div class="project-container">
+            <div class="tag" ng-repeat="x in project.hashtags"><p>{{x}}</p></div>
+            <div class="project" id="bpa">
+              <img ng-src="{{proj.mainImg}}" alt="project">
+              <div class="description">
+                <h4>{{proj.heading}} - {{proj.subheading}}</h4><a ng-click="projectUrl()" ng-show={{proj.hasProjectURL}}><img src="img/link.png" alt="linkto"></a>
+                <!-- <p>{{proj.mainDescription}}</p> -->
+                <div class="project-button">
+                  <button class="design"><a ng-href="{{proj.designURL}}">Design Process</a></button>
+                  <button class="github" ng-show="{{proj.hasGithubURL}}"><a ng-click="githubUrl()" target="_blank">Github</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
   </div>
