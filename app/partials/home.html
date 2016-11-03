@@ -43,9 +43,10 @@ set of skills. Explore my <span class="yellow">left</span> and
         <div class="project" id="bpa">
           <img ng-src="{{project.mainImg}}" alt="project">
           <div class="description">
-            <h4>{{project.heading}} - {{project.subheading}}</h4><a ng-click="projectUrl()" ng-show={{project.hasProjectURL}}><img src="img/link.png" alt="linkto"></a>
+            <h4>{{project.heading}} - {{project.subheading}}</h4><a ng-click="projectUrl()" ng-show={{project.hasProjectURL}} title="Launch Website"><img src="img/link.png" alt="linkto"></a>
             <p>{{project.mainDescription}}</p>
             <div class="project-button">
+              <!-- <button class="github" ng-show="{{project.hasGithubURL}}"><a ng-click="websiteUrl()" target="_blank">Website</a></button> -->
               <button class="design"><a ng-href="{{project.designURL}}">Design Process</a></button>
               <button class="github" ng-show="{{project.hasGithubURL}}"><a ng-click="githubUrl()" target="_blank">Github</a></button>
             </div>

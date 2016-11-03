@@ -72,9 +72,10 @@
             <div class="project">
               <img ng-src="{{proj.mainImg}}" alt="project">
               <div class="description">
-                <h4>{{proj.heading}} - {{proj.subheading}}</h4><a ng-click="projectUrl()" ng-show={{proj.hasProjectURL}}><img src="img/link.png" alt="linkto"></a>
+                <h4>{{proj.heading}} - {{proj.subheading}}</h4><a title="Launch Website" ng-click="projectUrl()" ng-show={{proj.hasProjectURL}}><img src="img/link.png" alt="linkto"></a>
                 <!-- <p>{{proj.mainDescription}}</p> -->
                 <div class="project-button">
+                  <!-- <button class="github" ng-show="{{project.hasGithubURL}}"><a ng-click="websiteUrl()" target="_blank">Website</a></button> -->
                   <button class="design"><a ng-href="{{proj.designURL}}">Design Process</a></button>
                   <button class="github" ng-show="{{proj.hasGithubURL}}"><a ng-click="githubUrl()" target="_blank">Github</a></button>
                 </div>

@@ -63,7 +63,14 @@
       },
       {
           "heading": "MY TAKEAWAYS",
-          "paragraph": "",
+          "paragraph": "The BPA Hackathon was my favorite experience during my summer internship at TechFlow. While our development team followed the Agile methodologies, the hackathon exposed me to all parts of the Agile methods that I was often not part of in the regular environment. Although I was an intern, the scrum team assigned me the primary UI designer which proved to be quite challenging given the numerous development and time constraints. I was the primary HTML/CSS developer, with some Angular tasks used in the consumption and rendering of the data passed from the API. With this primary role, I worked closely with the product owner and business analysts who provided me guidance in creating the paper or whiteboard prototypes.  ",
+          "subheadings": [
+            {
+              "heading": "User Testing and Consistency",
+              "img": "true",
+              "paragraph": "Although I was involved in the user story and persona creation, not being involved in the user testing strained my understanding of the end user. The most crucial design flaw from the first sprint arose from one of the UAT (user acceptance testing) from a participant related to the pharmaceutical business. The Drug Information portion displayed generic and warning information on a split screen, but the aesthetic decisions were not as recognizable or similar to a drug label seen on most bottles. From UAT, the user testers gathered the importance of such recognition, that often users look in the same area of the drug label for specific information, such as allergies. This delay of information from user testers to designers almost costed a full day work. Additionally, as the lead UX designer, not being able to ask the necessary followup questions within the same context of user testing may have affected the usability of the final prototype. With a service that deals with prescription drugs, even the smallest design decisions could be threatening. Consistency with labeling conventions is crucial to uphold for users that need this information to make health decisions."
+            }
+          ],
           "img": "true"
       }
     ]
@@ -85,24 +92,58 @@
     "designImg": "img/sdms-desktop.png",
     "role": "UI/UX Designer and Front End Developer",
     "tools": "sketchbook & pens, bootstrap, less",
-    "brief": "The reponsive website of San Diego Music Studio (SDMS) is a redesign of an outdated ecommerce website",
+    "brief": "The reponsive website of San Diego Music Studio (SDMS) is a complete redesign of their studio website that provides information about staff, music lessons, and rentals.",
     "deliverables": [ "specified menu items and features given by manager","instructor biographies", "facebook feed", "google map integration", "quick rentals of popular items"],
     "goals": ["minimize content from existing website", "demonstrate a family-friendly, local business brand", "show SDMS as a prominent presence in music community"],
     "designProcess":[
       {
-          "heading": "DELIVERABLES DETERMINED BY STORE MANAGER",
+          "heading": "EVALUATION OF PREVIOUS WEBSITE",
           "img": "true",
-          "description": ""
+          "paragraph": "The previous website also served as an ecommerce business for their music instruments, sheets, and accessories. The store manager wanted two separate sites for the store and online supply business, so the San Diego Music Store website would showcase only a fraction of what the previous website had. Several design flaws of the current website concerned the navigation of the ecommerce portion of the website because of the amount of content and multiple user flows.",
+          "subheadings": [
+            {
+              "heading": "Not Responsive",
+              "img": "true",
+              "paragraph": "The previous site was not adaptive to mobile views, making it much more difficult for users to navigate the site. If the user wanted to get anywhere deeper in the site, the search was at corner of the page while the side menu was on the opposite side, which did not fit in the screen for any resolution smaller than a normal desktop. Adaptiveness is also a Google standard, so to improve SEO it was crucial to make the site mobile-first."
+            },
+            {
+              "heading": "No Defining Brand",
+              "img": "true",
+              "paragraph": "The clutter and lack of color (or even whitespace) was not only overwhelming to the eye, but did not serve to emote or represent any sort of brand of the studio. "
+            },
+            {
+              "heading": "Not Readable",
+              "img": "true",
+              "paragraph": "At every level of the website, the font, use of white space, and images did not draw the user to any center of attention. A page should effectively draw the users attention with actionable purpose."
+            }
+          ]
       },
       {
-          "heading": "TRELLO BOARD FOR TASK PROCESSING",
+          "heading": "REPURPOSING THE WEBSITE",
           "img": "true",
-          "description": ""
+          "paragraph": "The main deliverables were provided by the store manager. The purpose of this website would be only for the studio so this gave room to add some design and graphics that would contribute to the overall welcoming, family-friendly look of the website. The color palette I chose was fiting for a this new brand which the client was pleased about. The current menu items were also given by the store manager which basically dictated the entire site flow. "
       },
       {
           "heading": "MY TAKEAWAYS",
-          "paragraph": "The BPA Hackathon was my favorite experience during my summer internship at TechFlow. While our development team followed the Agile methodologies, the hackathon exposed me to all parts of the Agile methods that I was often not part of in the regular environment. Although I was an intern, the scrum team assigned me the primary UI designer which proved to be quite challenging given the numerous development and time constraints. With this primary role, I worked closely with the product owner and business analysts who provided me guidance in creating the paper or whiteboard prototypes. Although I was involved in the user story and persona creation, not being involved in the user testing strained my understanding of the end user. I was the primary HTML/CSS developer, with some Angular tasks used in the consumption and rendering of the data passed from the API.  ",
-          "img": "true"
+          "paragraph": "As a freelancer, this was the first project for a client in which I had to develop a completely new website, and while very eager to practice all the UX research and usability evaluations I learned in school, the design and implementation process proved much more different than expected. The most important take away working as a freelancer is 'Time Is Money' - designing and developing under the constraint of small budget often causes a lot of shortcuts in the design process to make clients happy.",
+          "img": "true",
+          "subheadings": [
+            {
+              "heading": "Freelancing Can Be Messy & Clients Don't Know What They Want",
+              "img": "true",
+              "paragraph": "With a very tight budget and time schedule, communicating what needs to be done and estimating the work time proved to be difficult. Since this was my first client, I simply did my best work in the amount of time I had, without suggesting and pushing for certain design choices that would have improved the brand and usability. Clients might not know what's best, even if it means trying to convince them to spend more time on developing useful features or refining the design."
+            },
+            {
+              "heading": "High Fidelity Prototypes Would Have Been Nice",
+              "img": "true",
+              "paragraph": "Again, with the time crunch I only managed to get rough paper prototypes of the site which doesn't have much depth to it. The most convincing way to get a client on board with a design suggestion is to provide both low and high fidelity prototypes. Better communication could have made for a better aesthetic of the site and bulking up the content of the website perhaps if I had provided a clearer design vision for the client. Prototypes can communicate ideas to move forward in development and convince clients that spending more time is worth it. This makes for great business on both ends."
+            },
+            {
+              "heading": "Technical Architecture Should Be Optimized For Client Management",
+              "img": "true",
+              "paragraph": "From a coding perspective, if the client wanted to make the weebsite dynamic later down the road, then the framework would have to be restructured. There are technologies I could have considered to make the management of the content easier, for example using JSON to pass data and using Handlebars or Angular to render it on the front end."
+            }
+          ]
       }
     ]
   },
@@ -119,14 +160,23 @@
     "hasProjectURL": "true",
     "projectURL": "http://sd-gentrif.herokuapp.com/",
     "hasGithubURL": "true",
+    "githubURL": "https://github.com/andrianabeltran/gentrif-website",
+    "designImg": "img/gentrif-desktop.png",
+    "role": "UX Designer",
+    "tools": "pen & paper, Axure, bootstrap",
+    "brief": "A web platform that consumes demographic information in San Diego to demonstrate the effects of gentrification through interactive visualizations.",
+    "deliverables": ["web service utilizing demographic statistics San Diego public datasets", "implement d3js visualizations", "use MongoDB, Node, Handlebars, Express as environment"],
+    "goals": ["create low and high fidelity protoypes on Axure", "bring awareness to the gentrification issue", "display the relevant statistics through a digestable interface"],
     "designProcess":[
       {
-          "heading": "heading 1",
-          "description": "description"
+          "heading": "EVALUATE DATASETS AND IDEATION",
+          "img": "true",
+          "paragraph": ""
       },
       {
           "heading": "heading 2",
-          "description": "description"
+          "img": "true",
+          "paragraph": ""
       }
     ]
   },
@@ -162,7 +212,7 @@
     "hashtags": [
       "#Angular","#UX", "#lowfi", "#highfi", "#HTML/CSS", "#Javascript", "#Adobe Illustrator"
     ],
-    "designURL": "#/uofl",
+    "designURL": "#/portfolio",
     "hasGithubURL": "true",
     "githubURL": "https://github.com/andrianabeltran/myportfolio/",
     "designProcess":[
@@ -190,7 +240,7 @@
     "hasProjectURL": "true",
     "projectURL": "uofleicester/index.html",
     "githubURL": "https://github.com/TFlowGit/tf-ads-bpa",
-    "designImg": "img/bpa-desktop.png",
+    "designImg": "img/uofl-desktop.png",
     "role": "UI/UX Designer",
     "tools": "pen & paper, Illustrator ",
     "brief": "",
