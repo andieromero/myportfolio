@@ -57,12 +57,18 @@
                 <p>{{y.paragraph}}</p>
               </div>
             </div>
-            <hr>
+            <hr ng-if="project.projectID != 'ourucsd'">
           </div>
       </div>
 
+      <h1 ng-if="project.projectID == 'ourucsd'" class="animated fadeIn"
+      style="
+        text-align: center;
+        -vendor-animation-duration: 3s;
+        -vendor-animation-delay: 2s;
+        -vendor-animation-iteration-count: infinite;">Loading pdf...</h1>
       <embed src="ourucsd.pdf" width="100%" ng-if="project.projectID == 'ourucsd'" > </embed>
-
+      <hr ng-if="project.projectID == 'ourucsd'">
 
       <div>
         <h2>Other Work</h2>
