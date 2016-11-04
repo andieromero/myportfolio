@@ -863,3 +863,9 @@ hr {
 }
 .dp .project-container.col-sm-4{
 }*/
+embed {
+    display: inline-block;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 15px;
+}

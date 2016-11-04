@@ -89,7 +89,7 @@
     "projectURL": "http://sandiegomusicstudio.com/",
     "hasGithubURL": "true",
     "githubURL": "https://github.com/andrianabeltran/SDMSDesign",
-    "designImg": "img/sdms-desktop.png",
+    "designImg": "img/sdms-desktop.PNG",
     "role": "UI/UX Designer and Front End Developer",
     "tools": "sketchbook & pens, bootstrap, less",
     "brief": "The reponsive website of San Diego Music Studio (SDMS) is a complete redesign of their studio website that provides information about staff, music lessons, and rentals.",
@@ -209,14 +209,16 @@
     "designURL": "#/ourucsd",
     "hasProjectURL": "false",
     "hasGithubURL": "false",
+    "designImg": "img/ourucsd-desktop.png",
+    "role": "Research and Outreach Coordinator",
+    "tools": "Google Survey, sketchbook, sticky notes, whiteboard",
+    "brief": "A critical design is a design that proposes an alternative to dominant power formations embedded in our objects and environments. This projects challenges students to question the education structure of this 4 year university.",
+    "deliverables": ["deliver a critical design intervention", "create and test prototypes", "present a final reflection on the design process and results"],
+    "goals": ["demonstrate an alternative perspective about a dominant social construct", "use a multi media approach for the intervention or campaign", "compel the viewer to speculate and provoke deep thought about the issue"],
     "designProcess":[
       {
-          "heading": "heading 1",
-          "description": "description"
-      },
-      {
-          "heading": "heading 2",
-          "description": "description"
+          "heading": "OUR FINAL PORTFOLIO",
+          "img": "true"
       }
     ]
   },
