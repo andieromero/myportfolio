@@ -165,18 +165,35 @@
     "role": "UX Designer",
     "tools": "pen & paper, Axure, bootstrap",
     "brief": "A web platform that consumes demographic information in San Diego to demonstrate the effects of gentrification through interactive visualizations.",
-    "deliverables": ["web service utilizing demographic statistics San Diego public datasets", "implement d3js visualizations", "use MongoDB, Node, Handlebars, Express as environment"],
-    "goals": ["create low and high fidelity protoypes on Axure", "bring awareness to the gentrification issue", "display the relevant statistics through a digestable interface"],
+    "deliverables": ["web service utilizing demographic statistics San Diego public datasets", "implement d3js visualizations", "use Heroku, MongoDB, Node, Handlebars, Express as environment"],
+    "goals": ["create low and high fidelity protoypes on Axure", "bring awareness to the gentrification issue through storytelling", "display the relevant statistics through a digestable interface"],
     "designProcess":[
       {
-          "heading": "EVALUATE DATASETS AND IDEATION",
+          "heading": "BACKGROUND AND MOTIVATION",
           "img": "true",
-          "paragraph": ""
+          "paragraph": "As college students, we often wonder about how far our college degree will take us, particularly how rich we will become, or how affordable a house will be when we go out into the real world. That is why we want to see how college graduates actually affect local communities. Our main goal is to determine if one geographical region containing a high concentration of residents with college degrees contributes to the process of the gentrification of that region. Gentrification is the displacement of lower income households by higher income individuals who are moving into the region.  It has already happened in parts of the bay area due to its booming technology industry. We might be able to analyze data from San Diego to pinpoint occurrences of gentrification. We can even look deeper into the data to discover the demographics and career choices of people who contribute to the displacement of local households."
       },
       {
-          "heading": "heading 2",
+          "heading": "PROJECT OBJECTIVES",
           "img": "true",
-          "paragraph": ""
+          "paragraph": "By utilizing data about college education, changes in income and housing rates over specific regions of San Diego, we hope to create a visualization that easily shows the changes in standard of living of each region (income and housing rates) over time based on its concentration of college degrees and other economic factors.   It will basically help understand the levels of gentrification in various regions. Although gentrification is not as common outside of the San Francisco bay area, we might be able to compare past and present trends to estimate the fate of other cities and regions."
+      },
+      {
+          "heading": "MY TAKEAWAYS",
+          "img": "true",
+          "paragraph": "This 3 week project demanded a lot from the coding perspective for a small team of 4. Because of the time constraint and deliverables for the 3 week project, many methods crucial for a well-designed product were short circuit. User testing, for example, did not occur until after the final prototypes. Need finding exercises would have provided more insight into the issues of gentrification and how people might be interested in knowing these effects.",
+          "subheadings": [
+            {
+              "heading": "Post evaluation of UX Design",
+              "img": "true",
+              "paragraph": "Evaluating at the final product in regards to the design goals we had initially set, there are several tipping points in its overall aesthetic, user flow, and storytelling. For example, the storytelling aspect of the final prototype is definitely not powerful enough to emote anything from the user about the serious effects of gentrification. Personifying these effects or providing anecdotes could have illustrated a better story for the user."
+            },
+            {
+              "heading": "Working with Express, Node, and d3JS was Challenging",
+              "img": "true",
+              "paragraph": "This project  introduce me to client and server side communication, how they work dynamically together to pass and render data. As my first full fledged data mining project, it was eye opening to me the availability of these datasets and how value for any type of user can be extracted for a service."
+            }
+          ]
       }
     ]
   },
