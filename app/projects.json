@@ -154,7 +154,7 @@
     "mainImg": "img/gentrif.png",
     "mainDescription": "Utilizing the Delphi public dataset and d3.js data visualization library, out team developed a platform that consumed relevant demographic information about several areas in San Diego to demonstrate the effects of gentrification. I contributed to most of the low and high fidelity prototypes, design documentation, and the UI of the website. The main objective of this assignment was to create useful meaning from Delphi's public dataset and to provide interactive visualization of the information. ",
     "hashtags": [
-      "#HTML/CSS", "#Javascript", "#datamining", "#d3js", "#paperprototyping", "#Axure"
+      "#HTML/CSS", "#Javascript", "Handlebars","#datamining", "#d3js", "#paperprototyping", "#Axure"
     ],
     "designURL": "#/gentrif",
     "hasProjectURL": "true",
@@ -215,16 +215,11 @@
     "brief": "A critical design is a design that proposes an alternative to dominant power formations embedded in our objects and environments. This projects challenges students to question the education structure of this 4 year university.",
     "deliverables": ["deliver a critical design intervention", "create and test prototypes", "present a final reflection on the design process and results"],
     "goals": ["demonstrate an alternative perspective about a dominant social construct", "use a multi media approach for the intervention or campaign", "compel the viewer to speculate and provoke deep thought about the issue"],
-    "designProcess":[
-      {
-          "heading": "OUR FINAL PORTFOLIO",
-          "img": "true"
-      }
-    ]
+    "designProcess":[    ]
   },
   {
     "projectID": "portfolio",
-    "heading": "andrianaromero@herokuapp.com",
+    "heading": "andrianaromero.com",
     "subheading": "Portfolio website showcasing my CS and UX work",
     "mainImg": "img/portfolio.png",
     "mainDescription": "This is my personal portfolio that showcases my past work and projects. Designed on low and high fidelity prototypes, my website's color palette, fonts, and other design attributes exhibit my personality. To showcase my front end development skills, this website is fully developed with AngularJS and deployed on Heroku. Feel free to browse my github to examine the framework and code.",
@@ -234,14 +229,64 @@
     "designURL": "#/portfolio",
     "hasGithubURL": "true",
     "githubURL": "https://github.com/andrianabeltran/myportfolio/",
+    "designImg": "img/portfolio-mobile.png",
+    "role": "Designer and Developer",
+    "tools": "pen & paper, Illustrator, Heroku, Node, Angularjs",
+    "brief": "My personal website that is custom designed and developed by yours truly.",
+    "deliverables": ["an about me portion with a preview of my skills/experience", "include CS and UX related projects and work", "design process for each project"],
+    "goals": ["demonstrate aspects of my personality and work ethic through design", "ease of navigation between projects", "create a unique brand apart from peers to distinguish myself"],
     "designProcess":[
       {
-          "heading": "heading 1",
-          "description": "description"
+          "heading": "COMPETITIVE ANALYSIS AND PROTOYPING",
+          "img":"true",
+          "paragraph": "",
+          "subheadings": [
+            {
+                "heading": "Evaluating Peers",
+                "img": "true",
+                "paragraph": "Before thinking about the design of my portfolio website, I first evaluated the portfolios of my peers. The criteria for this evaluation were the following: is the portfolio aimed for CS and/or UX, color palette and font selection, brand and overall aesthetic impression, language, what sections are displayed, how is it hosted or developed, and navigation. I gathered that whether the student was more CS or UX centered, the deliverables and order of the sections were some Home page, About Me, Work, Resume, and Contact. The color palette of most suggested a professional and neutral to subtle use of cool to warm-ish colors. Minimal content and clean use of whitespace draws the user to their work portion, which outlines the design process to some extent. "
+            },
+            {
+                "heading": "How to Set Myself Apart",
+                "img": "true",
+                "paragraph": "When I began to prototype, I decided I wanted to go for a bold use of colors and fonts to demonstrate my fun, creative side. I would aim for my work projects and storytelling of my design or coding process to speak for my methodological and thorough professional work ethic. The bottom line was to leap out of my comfort zone to make a statement through the design, let the viewer know that I'm eager to learn and be different."
+            },
+            {
+                "heading": "Low and High Fidelity Prototyping",
+                "img":"true",
+                "paragraph": "I went through many iterations of designs and layouts. For the wireframe and skeleton of the layout, I relied on pen and paper, sometimes with colored pencils to outline contrasting blocks of color. My high fidelity prototypes were made through Illustrator which was constantly updated and changed throughout development."
+            }
+          ]
+      },
+
+      {
+          "heading": "CODING ENVIRONMENT",
+          "img":"true",
+          "paragraph": "",
+          "subheadings": [
+            {
+              "heading": "Heroku, Node, Angular, JSON and HTML/CSS",
+              "img": "true",
+              "paragraph": "Choosing to develop my portfolio through a popular framework - from the HTML/CSS barebones to the Node and Heroku backbones for hosting - was another way to set myself apart from my peers and most importantly, challenge myself to build a small website from scratch. I used Angular since it is a popular framework and I was lightly familiar with it. This project properly uses Angular features such as directives, modules from other developers, routing services, consuming of JSON objects to be passed to templates, and more. For reusability, I have a large JSON file that holds the content of the website. Angular is used to iterate through project objects and render the content in its respective places."
+            }
+          ]
       },
       {
-          "heading": "heading 2",
-          "description": "description"
+          "heading": "MY TAKEAWAYS",
+          "img": "true",
+          "paragraph": "",
+          "subheadings": [
+            {
+              "heading": "Take Time to Research",
+              "img": "true",
+              "paragraph": "Since the portfolio is technically a static website, I wanted to use javascript to template the layouts. In the past, some school projects were made without this efficiency, just HTML/CSS code. Taking the time to research is just a way to work smarter and not harder. "
+            },
+            {
+              "heading": "Be Critical but Time Conscious",
+              "img": "true",
+              "paragraph": "One of my weaknesses is being overly critical of myself and my work. Often times I found myself spending more time prototyping, changing my mind, or analyzing my work than actually getting anything done. With design and development, rapid and iterative process is just as crucial as critique and evaluation. I learned that this is my weakness, but overcome it through iterative work which reinforces my learning - improvements can be gradual and  mistakes make good design."
+            }
+          ]
       }
     ]
   },
@@ -257,62 +302,15 @@
     "designURL": "#/uofl",
     "hasGithubURL": "false",
     "hasProjectURL": "true",
-    "projectURL": "uofleicester/index.html",
+    "projectURL": "uofleicester/home.html",
     "githubURL": "https://github.com/TFlowGit/tf-ads-bpa",
     "designImg": "img/uofl-desktop.png",
     "role": "UI/UX Designer",
-    "tools": "pen & paper, Illustrator ",
-    "brief": "",
-    "deliverables": ["MVP utilizing openFDA's API to provide a web service", "documentation of Agile approach", "documentation of UX design process", "Agile outline for one product increment"],
-    "goals": ["implement query or look-up based service", "visualize adverse event statistics with interactivity", "maintain the recognizable design or look of a traditional drug label"],
+    "tools": "pen & paper, Google Sheets for comp analysis etc. ",
+    "brief": "Redesign of a university website based on user research and usability evaluations to better architect the navigation between pages while preserving brand and necessary content. The redesign includes a working prototype of the home page and wireframes of 2nd and 3rd level pages.",
+    "deliverables": ["competitive analysis of other university websites","100 user stories", "user personas", "usability evaluation based on 10 heuristics", "website purosed for the usability evaluation and other design documentation", "coded prototype of the redesigned website down to 3 navigation levels"],
+    "goals": ["prioritize user stories and goals", "map the site flow", "prototype landing page with improved navigation", "improve the usability and aesthetic of the website"],
     "designProcess":[
-      {
-          "heading": "AGILE APPROACH",
-          "img": "img/bpa-sprintcycle.png",
-          "paragraph": "Our Agile team of about 15 employees at TechFlow each held specific responsibilities to deliver a working prototype using datasets from openFDA.gov. Below outlines the 7 stages of the Agile Approach which was carried out in a week and a half. The github repo outlines the approach in further detail.",
-          "subheadings": [
-            {
-              "heading": "Stage 1: Vision",
-              "img": "true",
-              "paragraph": "The first meeting the team accomplished several visionary goals - determining how the FDA data will be employed, establishing user personas, identifying human centered design features that would be useful and appealing, and definining the technical architecture."
-            },
-            {
-              "heading": "Stage 2: Product Roadmap",
-              "img": "true",
-              "paragraph": "After the visionary meeting, the team defined the MVP, drafted the roadmap for the features to be implemented for the week, finalized user stories, prioritized backlog, and setup the technical environment (AWS and github accounts)."
-            },
-            {
-              "heading": "Stage 3: Release Planning",
-              "img": "true",
-              "paragraph": "At this stage, we refined the roadmap for features based on team capability, planned the test development approach used to validate user stories, scheduled 2 releases into production, and finalized the Definition of Done for each deliverable."
-            },
-            {
-              "heading": "Stage 4: Sprint Planning",
-              "img": "true",
-              "paragraph": "We narrowed down the iterative approach which included 2 sprints focused on the highest priority features. Based on these 2 sprints, the sprint backlog was updated with clearer tasks for the week, specific user stories for the MVP were identified for the current backlog as well as the next production increment, and previous environment issues were resolved."
-            },
-            {
-              "heading": "Stage 5: Daily Scrum",
-              "img": "true",
-              "paragraph": "Led by the scrum master, our 15 minute daily scrums were crucial in the design and development of the prototype. Each meeting, the team identified completed items from the previous day, discussed blockers, and communicated other concerns related to project coordination."
-            },
-            {
-              "heading": "Stage 6: Sprint Review",
-              "img": "true",
-              "paragraph": "The two sprint review meetings ensured that the prototype had reached the goals for that sprint in accordance to the user stories and goals. The feedback from the User Acceptance Testing(UAT) determined whether the product owner would approve of the progress as it met the criteria."
-            },
-            {
-              "heading": "Stage 7: Sprint Retrospective",
-              "img": "true",
-              "paragraph": "This stage differs from Sprint Review because the main goal is to assess the processes and performance of the scrum team. An example of the questions asked at this meeting is - Did we meet our expected results? We looked at the sprint burn-down to compare planned versus actual work accomplished."
-            }
-          ]
-      },
-      {
-          "heading": "MY TAKEAWAYS",
-          "paragraph": "The BPA Hackathon was my favorite experience during my summer internship at TechFlow. While our development team followed the Agile methodologies, the hackathon exposed me to all parts of the Agile methods that I was often not part of in the regular environment. Although I was an intern, the scrum team assigned me the primary UI designer which proved to be quite challenging given the numerous development and time constraints. With this primary role, I worked closely with the product owner and business analysts who provided me guidance in creating the paper or whiteboard prototypes. Although I was involved in the user story and persona creation, not being involved in the user testing strained my understanding of the end user. I was the primary HTML/CSS developer, with some Angular tasks used in the consumption and rendering of the data passed from the API.  ",
-          "img": "true"
-      }
     ]
   }
 ]

@@ -57,18 +57,31 @@
                 <p>{{y.paragraph}}</p>
               </div>
             </div>
-            <hr ng-if="project.projectID != 'ourucsd'">
           </div>
       </div>
 
-      <h1 ng-if="project.projectID == 'ourucsd'" class="animated fadeIn"
+      <!-- <h1 ng-if="project.projectID == 'ourucsd'" class="animated fadeIn"
       style="
         text-align: center;
         -vendor-animation-duration: 3s;
         -vendor-animation-delay: 2s;
         -vendor-animation-iteration-count: infinite;">Loading pdf...</h1>
-      <embed src="ourucsd.pdf" width="100%" ng-if="project.projectID == 'ourucsd'" > </embed>
-      <hr ng-if="project.projectID == 'ourucsd'">
+      <embed src="ourucsd.pdf" width="100%" ng-if="project.projectID == 'ourucsd'" > </embed> -->
+      <div ng-if="project.projectID == 'ourucsd'">
+        <br>
+        <h2>To view the full design process check out our final portfolio <a ng-href="ourucsd.pdf" target="_blank">here.</a></h2>
+        <br>
+        <br>
+      </div>
+      <div ng-if="project.projectID == 'uofl'">
+        <br>
+        <h2>To view the <span class="yellow">Usability Evaluation</span> of the original university site check it out <a ng-href="uofleicester/usabilityeval/index.html" target="_blank">here.</a></h2>
+        <br>
+        <h2>To view the <span class="yellow">Information Architecture</span> design of our prototype check it out <a ng-href="uofleicester/index.html" target="_blank">here.</a></h2>
+        <br>
+        <br>
+      </div>
+      <hr>
 
       <div>
         <h2>Other Work</h2>
