@@ -227,6 +227,8 @@
       "#Angular","#UX", "#lowfi", "#highfi", "#HTML/CSS", "#Javascript", "#Adobe Illustrator"
     ],
     "designURL": "#/portfolio",
+    "hasProjectURL": "true",
+    "projectURL": "http://www.andrianaromero.com",
     "hasGithubURL": "true",
     "githubURL": "https://github.com/andrianabeltran/myportfolio/",
     "designImg": "img/portfolio-mobile.png",

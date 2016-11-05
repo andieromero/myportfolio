@@ -871,3 +871,8 @@ embed {
     position: relative;
     top: -100px;
 }
+.launch{
+  text-decoration: underline;
+  color: #2a6496!important;
+  cursor: pointer;
+}

@@ -26,6 +26,8 @@
                 <br>
                 <img src="img/right.png" alt="role"><h3>TOOLS: </h3><h4>{{project.tools}}</h4>
                 <br>
+                <img src="img/right.png" alt="role" ng-if="project.hasProjectURL"><a title="Launch Website" ng-click="projectUrl()" ng-if="project.hasProjectURL"><h3>SITE: </h3><h4 class="launch">{{project.projectURL}}</h4></a>
+                <br>
               </div>
           </div>
       </div>
@@ -93,7 +95,8 @@
             <div class="project">
               <img ng-src="{{proj.mainImg}}" alt="project">
               <div class="description">
-                <h4>{{proj.heading}} - {{proj.subheading}}</h4><a title="Launch Website" ng-click="projectUrl()" ng-show={{proj.hasProjectURL}}><img src="img/link.png" alt="linkto"></a>
+                <h4>{{proj.heading}} - {{proj.subheading}}</h4>
+                <!-- <a title="Launch Website" ng-click="projectUrl()" ng-show="{{proj.hasProjectURL}}"><img src="img/link.png" alt="linkto"></a> -->
                 <!-- <p>{{proj.mainDescription}}</p> -->
                 <div class="project-button">
                   <!-- <button class="github" ng-show="{{project.hasGithubURL}}"><a ng-click="websiteUrl()" target="_blank">Website</a></button> -->
