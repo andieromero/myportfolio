@@ -628,6 +628,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/ourucsd", {templateUrl: "partials/project.html", controller: "PageCtrl"})
     .when("/portfolio", {templateUrl: "partials/project.html", controller: "PageCtrl"})
     .when("/uofl", {templateUrl: "partials/project.html", controller: "PageCtrl"})
+    .when("/ixd", {templateUrl: "partials/project.html", controller: "PageCtrl"})
     // Blog templates
     .when("/blog", {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
     .when("/blog/post", {templateUrl: "partials/blog_item.html", controller: "BlogCtrl"})
@@ -672,6 +673,9 @@ app.controller('PageCtrl', function ($scope, projectService, $location, $window)
             break;
           case "/uofl":
             $scope.project = data.data[5];
+            break;
+          case "/ixd":
+            $scope.project = data.data[6];
             break;
     }
     $scope.githubUrl = function(){

@@ -154,7 +154,7 @@
     "mainImg": "img/gentrif.png",
     "mainDescription": "Utilizing the Delphi public dataset and d3.js data visualization library, out team developed a platform that consumed relevant demographic information about several areas in San Diego to demonstrate the effects of gentrification. I contributed to most of the low and high fidelity prototypes, design documentation, and the UI of the website. The main objective of this assignment was to create useful meaning from Delphi's public dataset and to provide interactive visualization of the information. ",
     "hashtags": [
-      "#HTML/CSS", "#Javascript", "Handlebars","#datamining", "#d3js", "#paperprototyping", "#Axure"
+      "#HTML/CSS", "#Javascript", "#Handlebars","#datamining", "#d3js", "#paperprototyping", "#Axure"
     ],
     "designURL": "#/gentrif",
     "hasProjectURL": "true",
@@ -286,7 +286,7 @@
             {
               "heading": "Be Critical but Time Conscious",
               "img": "true",
-              "paragraph": "One of my weaknesses is being overly critical of myself and my work. Often times I found myself spending more time prototyping, changing my mind, or analyzing my work than actually getting anything done. With design and development, rapid and iterative process is just as crucial as critique and evaluation. I learned that this is my weakness, but overcome it through iterative work which reinforces my learning - improvements can be gradual and  mistakes make good design."
+              "paragraph": "Often times, I am overly critical of myself and my work. I find myself spending more time prototyping, changing my mind, or analyzing my work than actually getting anything done. With design and development, rapid and iterative process is just as crucial as critique and evaluation. I learned that this is an obstacle, but I overcome it through iterative work which reinforces my learning - improvements can be gradual and  mistakes make good design."
             }
           ]
       }
@@ -304,7 +304,7 @@
     "designURL": "#/uofl",
     "hasGithubURL": "false",
     "hasProjectURL": "true",
-    "projectURL": "uofleicester/home.html",
+    "projectURL": "http://www.andrianaromero.com/uofleicester/home.html",
     "githubURL": "https://github.com/TFlowGit/tf-ads-bpa",
     "designImg": "img/uofl-desktop.png",
     "role": "UI/UX Designer",
@@ -314,5 +314,26 @@
     "goals": ["prioritize user stories and goals", "map the site flow", "prototype landing page with improved navigation", "improve the usability and aesthetic of the website"],
     "designProcess":[
     ]
+  },
+  {
+    "projectID": "ixd",
+    "heading": "Interactive Design Projects",
+    "subheading": "Prototypes of a Online Classroom Tool for All Scales",
+    "mainImg": "img/ixd.png",
+    "mainDescription": "At UCSD, I took an Interactive Design (IxD) Studio where we chose some service to create on multiple mediums - from as small as the Apple Watch to an interactive walland even prototypes using gestures. For my focus, I decided to tackle the online university classroom space and perform some needfinding. As many students can relate, keeping track of all the different online platforms becomes a hassle. My prototypes are designed for social study curriculum, or classes that are more reading based with a classical lecture style.",
+    "hashtags": [
+      "#InteractiveDesign", "#Axure", "#Scalability", "#gestures"
+    ],
+    "designURL": "#/ixd",
+    "hasGithubURL": "false",
+    "hasProjectURL": "false",
+    "projectURL": "",
+    "githubURL": "",
+    "designImg": "img/ixd-ipad.png",
+    "role": "Interactive Designer",
+    "tools": "pen & paper, Axure ",
+    "brief": "A collection of low to high fidelity prototypes of an online blackboard for university classes that are lecture, reading, and assignment based.",
+    "deliverables": ["2 desktop prototypes", "ipad prototype", "Apple Watch prototypes", "video to illustrate gesture interactions with a mobile phone", "interactive wall or board prototype", "Google chrome prototype"],
+    "goals": ["evaluate current online blackboards", "integrate some interactions in prototype with Axure", "make multiple versions or iterations", "design for scale and maintain usability"]
   }
 ]
